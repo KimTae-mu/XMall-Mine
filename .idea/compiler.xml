@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="XMall-Common" />
+        <module name="XMall-Content-interface" />
+        <module name="XMall-Content-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="XMall-Common" target="1.8" />
+      <module name="XMall-Content" target="1.8" />
+      <module name="XMall-Content-interface" target="1.8" />
+      <module name="XMall-Content-service" target="1.8" />
+      <module name="XMall-Parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
