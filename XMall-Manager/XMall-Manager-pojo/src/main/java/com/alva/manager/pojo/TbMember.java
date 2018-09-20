@@ -30,7 +30,7 @@ public class TbMember {
 
     private Integer points;
 
-    private BigDecimal balance;
+    private Long balance;
 
     public Long getId() {
         return id;
@@ -136,11 +136,11 @@ public class TbMember {
         this.points = points;
     }
 
-    public BigDecimal getBalance() {
+    public Long getBalance() {
         return balance;
     }
 
-    public void setBalance(BigDecimal balance) {
+    public void setBalance(Long balance) {
         this.balance = balance;
     }
 }
