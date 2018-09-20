@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/CountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/DictService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ExpressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ItemCatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ThanksService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/resource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/XMall-Manager-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/XMall-Manager-interface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/XMall-Manager-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/XMall-Manager-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/XMallCommon/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Parent/target/" />
@@ -46,28 +48,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="83" />
-          <entry key="xml" value="17" />
+          <entry key="java" value="87" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="83" />
-          <entry key="XML" value="17" />
+          <entry key="JAVA" value="87" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Customize" value="12" />
-          <entry key="java" value="10186" />
-          <entry key="xml" value="41" />
+          <entry key="java" value="10353" />
+          <entry key="properties" value="233" />
+          <entry key="xml" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10186" />
+          <entry key="JAVA" value="10353" />
+          <entry key="Properties" value="233" />
           <entry key="VTL" value="12" />
-          <entry key="XML" value="41" />
+          <entry key="XML" value="42" />
         </counts>
       </usages-collector>
     </session>
@@ -75,10 +81,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/DtoUtil.java">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/MemberService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="144" column="15" selection-start-line="144" selection-start-column="15" selection-end-line="144" selection-end-column="15" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,14 +93,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/Member.java">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/OrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
-              <folding>
-                <element signature="e#2183#2184#0" expanded="true" />
-                <element signature="e#2221#2222#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ThanksService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/resource.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -109,95 +176,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/CountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/DictService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ExpressService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ItemCatService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ItemService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/MemberService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -213,8 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/constant/DictConstant.java" />
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/exception/XmallException.java" />
         <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/exception/XmallUploadException.java" />
         <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/utils/GeetesLib.java" />
         <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/utils/HttpUtil.java" />
@@ -227,7 +211,6 @@
         <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/jedis/JedisClient.java" />
         <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/jedis/JedisClientCluster.java" />
         <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/jedis/JedisClientPool.java" />
-        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Content/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/pom.xml" />
@@ -264,6 +247,9 @@
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ItemCatService.java" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ItemService.java" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/db.properties" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/resource.properties" />
       </list>
     </option>
   </component>
@@ -355,6 +341,50 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -366,7 +396,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537434856347" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537445389853" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -448,17 +478,18 @@
       <workItem from="1537321876665" duration="10000000" />
       <workItem from="1537351680565" duration="196000" />
       <workItem from="1537351940928" duration="3632000" />
-      <workItem from="1537408693016" duration="13934000" />
+      <workItem from="1537408693016" duration="16571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39876000" />
+    <option name="totallyTimeSpent" value="42513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-333" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Web" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21565495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
@@ -466,6 +497,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -496,76 +528,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/pojo/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/utils/ThreadPoolUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29784">
-          <caret line="1826" column="15" selection-start-line="1826" selection-start-column="15" selection-end-line="1826" selection-end-column="15" />
-          <folding>
-            <element signature="e#73319#73320#0" expanded="true" />
-            <element signature="e#73355#73356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/pojo/IpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/pojo/IpWeatherResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/utils/TimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="171" column="6" selection-start-line="171" selection-start-column="6" selection-end-line="171" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/constant/DictConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -632,14 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -664,14 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-586">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1103,14 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/CountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1144,7 +1082,7 @@
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ItemCatService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1163,11 +1101,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/MemberService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/ThanksService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/resource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
