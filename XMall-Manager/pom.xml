@@ -10,14 +10,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>XMall-Content</artifactId>
-
+    <artifactId>XMall-Manager</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>XMall-Content-interface</module>
-        <module>XMall-Content-service</module>
+        <module>XMall-Manager-interface</module>
+        <module>XMall-Manager-service</module>
+        <module>XMall-Manager-pojo</module>
+        <module>XMall-Manager-dao</module>
     </modules>
-
     <dependencies>
         <dependency>
             <groupId>com.alva</groupId>
@@ -25,7 +25,8 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-    <!-- 配置tomcat插件 -->
+
+     <!-- 配置tomcat插件 -->
     <build>
         <plugins>
             <plugin>
@@ -33,7 +34,8 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <path>/</path>
-                    <port>8081</port>
+                    <port>8080</port>
+                    <uriEncoding>UTF-8</uriEncoding>
                 </configuration>
             </plugin>
         </plugins>
