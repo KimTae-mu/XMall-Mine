@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="XMall-Common" />
+        <module name="XMall-Content-interface" />
+        <module name="XMall-Content-service" />
+        <module name="XMall-Manager-dao" />
+        <module name="XMall-Manager-interface" />
+        <module name="XMall-Manager-pojo" />
+        <module name="XMall-Manager-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="XMall-Common" target="1.8" />
+      <module name="XMall-Content" target="1.8" />
+      <module name="XMall-Content-interface" target="1.8" />
+      <module name="XMall-Content-service" target="1.8" />
+      <module name="XMall-Manager" target="1.8" />
+      <module name="XMall-Manager-dao" target="1.8" />
+      <module name="XMall-Manager-interface" target="1.8" />
+      <module name="XMall-Manager-pojo" target="1.8" />
+      <module name="XMall-Manager-service" target="1.8" />
+      <module name="XMall-Parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
