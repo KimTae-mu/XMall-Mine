@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbDict;
 import com.alva.manager.pojo.TbDictExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbDictMapper {
     long countByExample(TbDictExample example);

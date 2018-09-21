@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbMember;
 import com.alva.manager.pojo.TbMemberExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbMemberMapper {
     long countByExample(TbMemberExample example);

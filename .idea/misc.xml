@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/XMall-Content/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Common/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/pom.xml" />
+        <option value="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" />
       </list>
     </option>
   </component>

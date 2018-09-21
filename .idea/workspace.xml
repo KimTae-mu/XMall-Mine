@@ -1,7 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="" />
+    <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-trans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbAddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbAddressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbBaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbBaseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbDictMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbDictMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbExpressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbExpressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbItemCatMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbItemCatMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbItemDescMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbItemDescMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbMemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbOrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbOrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbOrderShippingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbOrderShippingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbPanelContentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbPanelContentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbPanelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbPanelMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbPermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbPermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbRolePermMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbRolePermMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbShiroFilterMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbShiroFilterMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbThanksMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbThanksMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbAddressMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbAddressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbBaseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbBaseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbDictMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbDictMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbExpressMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbExpressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbItemCatMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbItemCatMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbItemDescMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbItemDescMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbItemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbMemberMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbMemberMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbOrderItemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbOrderItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbOrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbOrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbOrderShippingMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbOrderShippingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbPanelContentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbPanelContentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbPanelMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbPanelMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbPermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbPermissionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbRolePermMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbRolePermMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbShiroFilterMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbShiroFilterMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbThanksMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbThanksMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/mapper/TbUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbAddressExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbBaseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbDict.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbDictExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbExpress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbExpressExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbItemCat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbItemCatExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbItemDesc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbItemDescExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbItemExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbLogExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbMemberExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbOrderExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbOrderItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbOrderItemExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbOrderShipping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbOrderShippingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbPanelContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbPanelContentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbPanelExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbPermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbPermissionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbRoleExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbRolePerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbRolePermExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbShiroFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbShiroFilterExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbThanks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbThanksExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbUserExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generatorSqlmapCustom/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generatorSqlmapCustom/src/main/resources/generatorConfig.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/XMallCommon/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Parent/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Content/target/" />
@@ -13,6 +124,7 @@
     <ignored path="$PROJECT_DIR$/XMall-Manager/XMall-Manager-Service/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/target/" />
+    <ignored path="$PROJECT_DIR$/generatorSqlmapCustom/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,49 +135,53 @@
     <session id="-1811225699">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="87" />
-          <entry key="properties" value="3" />
-          <entry key="xml" value="27" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="101" />
+          <entry key="properties" value="4" />
+          <entry key="xml" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="JAVA" value="87" />
-          <entry key="Properties" value="3" />
-          <entry key="XML" value="27" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="101" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Customize" value="12" />
-          <entry key="java" value="10353" />
+          <entry key="java" value="10355" />
           <entry key="properties" value="298" />
-          <entry key="xml" value="993" />
+          <entry key="xml" value="2047" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10353" />
+          <entry key="JAVA" value="10355" />
           <entry key="Properties" value="298" />
           <entry key="VTL" value="12" />
-          <entry key="XML" value="993" />
+          <entry key="XML" value="2047" />
         </counts>
       </usages-collector>
     </session>
@@ -73,83 +189,77 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbExpressMapper.java">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Parent/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/mybatis/SqlMapConfig.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-activemq.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-redis.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-service.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="493">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-trans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Common/pom.xml">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="901">
+              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/XMall-Manager-service.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbShiroFilterMapper.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbMemberMapper.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbAddressMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -160,8 +270,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="spring-beans.schema" />
       </list>
     </option>
@@ -171,7 +281,14 @@
       <find>cn.E</find>
       <find>cn.e</find>
       <find>druid</find>
+      <find>cn.exrick</find>
+      <find>ex</find>
+      <find>ext</find>
+      <find>exrick</find>
     </findStrings>
+    <replaceStrings>
+      <replace>com.alva</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,12 +296,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/utils/ThreadPoolUtil.java" />
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/utils/ResultUtil.java" />
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/utils/TimeUtil.java" />
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/jedis/JedisClient.java" />
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/jedis/JedisClientCluster.java" />
-        <option value="$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/jedis/JedisClientPool.java" />
         <option value="$PROJECT_DIR$/XMall-Content/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/pom.xml" />
@@ -228,8 +339,14 @@
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/mybatis/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-activemq.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-redis.xml" />
-        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-dao.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbAddressMapper.java" />
+        <option value="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" />
+        <option value="$PROJECT_DIR$/generatorSqlmapCustom/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbMemberMapper.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-trans.xml" />
       </list>
     </option>
   </component>
@@ -240,11 +357,33 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="generatorSqlmapCustom" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="generatorSqlmapCustom" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="-1920" />
@@ -287,13 +426,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Common" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
               <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
@@ -306,25 +444,69 @@
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
               <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
               <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Parent" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537501591303" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537527417745" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -332,10 +514,13 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23793103" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper" />
+      <recent name="$PROJECT_DIR$/generatorSqlmapCustom/src/main/resources" />
+      <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front" />
       <recent name="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo" />
     </key>
@@ -409,17 +594,20 @@
       <workItem from="1537408693016" duration="16679000" />
       <workItem from="1537494108533" duration="4698000" />
       <workItem from="1537501655989" duration="189000" />
-      <workItem from="1537501896783" duration="917000" />
+      <workItem from="1537501896783" duration="7805000" />
+      <workItem from="1537521288749" duration="1378000" />
+      <workItem from="1537523853067" duration="2479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48425000" />
+    <option name="totallyTimeSpent" value="59170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-333" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24600638" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19062833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -429,13 +617,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23762377" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.46435642" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.46237624" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Spring" order="11" />
@@ -448,7 +636,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.3290735" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,146 +646,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/RoleDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/OrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/OrderChartData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/MemberDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/ItemDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/EsInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/EsCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbAddressExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/ChartData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/AllGoodsResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/CommonDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/MemberLoginRegist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/OrderInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/PageOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/SearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/SearchItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/dto/front/ProductDet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -717,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
@@ -739,26 +780,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Parent/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/mybatis/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-activemq.xml">
@@ -775,10 +798,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-dao.xml">
+    <entry file="file://$PROJECT_DIR$/XMall-Common/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="136">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -790,24 +821,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Common/pom.xml">
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/mybatis/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/conf/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatorSqlmapCustom/src/cn/exrick/manager/pojo/TbLog.java" />
+    <entry file="file://$PROJECT_DIR$/generatorSqlmapCustom/src/main/java/com/alva/manager/pojo.java" />
+    <entry file="file://$PROJECT_DIR$/generatorSqlmapCustom/src/main/java/com/alva/manager/mapper.java" />
+    <entry file="file://$PROJECT_DIR$/generatorSqlmapCustom/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbBaseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatorSqlmapCustom/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbItemCatMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbPanelContentMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbOrderShippingMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbAddressMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbThanksMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbExpressMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbShiroFilterMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbMemberMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbAddressMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        <state relative-caret-position="901">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/XMall-Manager-service.iml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-trans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -815,10 +946,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>XMall-Manager-service:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.23793103" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -862,7 +995,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>XMall-Manager-pojo</last-edited>
+          <last-edited>generatorSqlmapCustom</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbOrder;
 import com.alva.manager.pojo.TbOrderExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbOrderMapper {
     long countByExample(TbOrderExample example);

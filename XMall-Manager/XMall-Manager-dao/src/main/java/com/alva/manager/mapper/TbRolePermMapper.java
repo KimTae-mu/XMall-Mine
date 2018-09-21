@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbRolePerm;
 import com.alva.manager.pojo.TbRolePermExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbRolePermMapper {
     long countByExample(TbRolePermExample example);

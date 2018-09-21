@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbShiroFilter;
 import com.alva.manager.pojo.TbShiroFilterExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbShiroFilterMapper {
     long countByExample(TbShiroFilterExample example);

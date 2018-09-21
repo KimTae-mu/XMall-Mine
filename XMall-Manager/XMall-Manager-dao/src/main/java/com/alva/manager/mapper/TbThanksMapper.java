@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbThanks;
 import com.alva.manager.pojo.TbThanksExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbThanksMapper {
     long countByExample(TbThanksExample example);

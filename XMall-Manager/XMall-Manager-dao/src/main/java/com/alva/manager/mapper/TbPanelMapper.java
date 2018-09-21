@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbPanel;
 import com.alva.manager.pojo.TbPanelExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbPanelMapper {
     long countByExample(TbPanelExample example);

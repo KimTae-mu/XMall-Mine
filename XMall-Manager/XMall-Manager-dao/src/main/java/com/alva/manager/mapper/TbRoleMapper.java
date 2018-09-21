@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbRole;
 import com.alva.manager.pojo.TbRoleExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbRoleMapper {
     long countByExample(TbRoleExample example);

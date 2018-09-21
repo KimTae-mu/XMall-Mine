@@ -2,8 +2,9 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbAddress;
 import com.alva.manager.pojo.TbAddressExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbAddressMapper {
     long countByExample(TbAddressExample example);
