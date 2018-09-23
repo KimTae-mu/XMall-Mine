@@ -1,6 +1,5 @@
 package com.alva.common.constant;
 
-import sun.jvm.hotspot.jdi.ShortTypeImpl;
 
 /**
  * <一句话描述>,

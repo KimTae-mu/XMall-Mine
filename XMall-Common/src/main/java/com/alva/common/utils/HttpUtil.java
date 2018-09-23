@@ -51,7 +51,7 @@ public class HttpUtil {
                 result = EntityUtils.toString(entity);
             }
         } catch (Exception e) {
-            log.error("处理失败", +e);
+            log.error("处理失败" + e);
             e.printStackTrace();
         } finally {
             if (response != null) {

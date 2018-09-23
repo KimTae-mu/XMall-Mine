@@ -11,5 +11,13 @@
 
     <artifactId>XMall-Content-interface</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alva</groupId>
+            <artifactId>XMall-Manager-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
