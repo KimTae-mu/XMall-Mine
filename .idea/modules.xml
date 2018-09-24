@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/XMall-Content/XMall-Content.iml" filepath="$PROJECT_DIR$/XMall-Content/XMall-Content.iml" />
       <module fileurl="file://$PROJECT_DIR$/XMall-Content/XMall-Content-interface/XMall-Content-interface.iml" filepath="$PROJECT_DIR$/XMall-Content/XMall-Content-interface/XMall-Content-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/XMall-Content/XMall-Content-service/XMall-Content-service.iml" filepath="$PROJECT_DIR$/XMall-Content/XMall-Content-service/XMall-Content-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XMall-Front-Web/XMall-Front-Web.iml" filepath="$PROJECT_DIR$/XMall-Front-Web/XMall-Front-Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager.iml" filepath="$PROJECT_DIR$/XMall-Manager/XMall-Manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/XMall-Manager-dao.iml" filepath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/XMall-Manager-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/XMall-Manager-interface.iml" filepath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/XMall-Manager-interface.iml" />

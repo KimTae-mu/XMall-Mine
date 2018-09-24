@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="XMall-Front-Web:war">
+    <output-path>$PROJECT_DIR$/XMall-Front-Web/target</output-path>
+    <root id="archive" name="XMall-Front-Web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="XMall-Front-Web:war exploded" />
+    </root>
+  </artifact>
+</component>
