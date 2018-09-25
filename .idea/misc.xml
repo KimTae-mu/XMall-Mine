@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/XMall-Front-Web" />
+    <file type="web" url="file://$PROJECT_DIR$/XMall-Manager-Web" />
     <file type="web" url="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service" />
   </component>
   <component name="MavenProjectsManager">
@@ -17,6 +18,7 @@
         <option value="$PROJECT_DIR$/XMall-Manager/pom.xml" />
         <option value="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Front-Web/pom.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager-Web/pom.xml" />
       </list>
     </option>
   </component>

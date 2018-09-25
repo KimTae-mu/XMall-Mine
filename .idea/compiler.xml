@@ -15,6 +15,7 @@
         <module name="XMall-Manager-interface" />
         <module name="XMall-Manager-pojo" />
         <module name="XMall-Manager-service" />
+        <module name="XMall-Manager-Web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="XMall-Manager-interface" target="1.8" />
       <module name="XMall-Manager-pojo" target="1.8" />
       <module name="XMall-Manager-service" target="1.8" />
+      <module name="XMall-Manager-Web" target="1.8" />
       <module name="XMall-Parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>

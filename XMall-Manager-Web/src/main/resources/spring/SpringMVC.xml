@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+
+    <!--启动对@AspectJ注解的支持-->
+    <aop:aspectj-autoproxy/>
+
+    <context:component-scan base-package="com.alva.manager"/>
+
+    <!--task任务扫描注解-->
+    <task:annotation-driven/>
+
+    <!--连接redis 单机-->
+    <bean id="jedisClientPool" class="com.alva.common.jedis.JedisClientPool">
+        <property name="jedisPool" ref="jedisPool"/>
+    </bean>
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+        <property name="host" value="127.0.0.1"/>
+        <property name="port" value="6379"/>
+    </bean>
+
+    <!--配置自定义Realm-->
+
+    <!--安全管理器-->
+
+    <!--Shiro声明周期处理器-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <!--SpringMVC 视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--配置多媒体解析器-->
+    <!--定义文件上传解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--设定默认编码-->
+        <property name="defaultEncoding" value="UTF-8"></property>
+        <!--设定文件上传的最大值5MB,5*1024*1024-->
+        <property name="maxUploadSize" value="5242880"></property>
+    </bean>
+
+    <!--配置资源映射-->
+    <mvc:resources mapping="/lib/**" location="/lib/"/>
+    <mvc:resources mapping="/static/**" location="/static/"/>
+    <mvc:resources mapping="/temp/**" location="/temp/"/>
+    <mvc:resources mapping="/icon/**" location="/icon/"/>
+    <mvc:resources mapping="/upload/**" location="/upload/"/>
+
+    <!--引用dubbo服务-->
+    <dubbo:application name="XMall-Manager-Web"/>
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+    <dubbo:reference interface="com.alva.manager.service.ItemService" id="itemService"/>
+    <dubbo:reference interface="com.alva.manager.service.MemberService" id="memberService" />
+    <dubbo:reference interface="com.alva.manager.service.ItemCatService" id="itemCatService" />
+    <dubbo:reference interface="com.alva.manager.service.UserService" id="userService" />
+    <dubbo:reference interface="com.alva.manager.service.OrderService" id="orderService" />
+    <dubbo:reference interface="com.alva.manager.service.ThanksService" id="thanksService" />
+    <dubbo:reference interface="com.alva.manager.service.SystemService" id="systemService" />
+    <dubbo:reference interface="com.alva.content.service.ContentService" id="contentService" />
+    <dubbo:reference interface="com.alva.content.service.PanelService" id="panelService" />
+    <dubbo:reference interface="com.alva.manager.service.DictService" id="dictService"/>
+    <dubbo:reference interface="com.alva.manager.service.ExpressService" id="expressService"/>
+    <dubbo:reference interface="com.alva.manager.service.CountService" id="countService"/>
+</beans>

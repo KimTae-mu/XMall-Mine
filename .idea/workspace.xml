@@ -2,9 +2,1145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/403.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-permission-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-permission-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-permission.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-role-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-role-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-role.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/admin-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/change-admin-password.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/change-password.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/chart-order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/choose-category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/choose-parent-category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/choose-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-banner-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-banner-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-banner-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-category-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-header-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-header-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-header-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-index-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-other-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-panel-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-panel.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-product-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/content-product-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/dict-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/dict-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/dict-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/lock-screen.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/member-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/member-del.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/member-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/member-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/member-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/order-deliver.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/order-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/order-print.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/order-remark.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/pay-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/product-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/product-category-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/product-category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/product-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/product-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/refresh-index-redis.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/refresh-index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/refresh-other-redis.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/shiro-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/shiro-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/system-base.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/system-express-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/system-express-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/system-express.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/system-log.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/system-shiro.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/thanks-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/thanks-edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/thanks-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/thanks-pic.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/alipay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/backstage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/bilibili.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/doge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/none.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/oschina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/icon/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/DD_belatedPNG_0.0.8a-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/Hui-iconfont/1.0.8/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/Hui-iconfont/1.0.8/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/datepicker-dev.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/twoer/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/My97DatePicker/4.8/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/busuanzi.pure.mini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/changyan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/datatables/1.10.0/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/datatables/Chinese.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/datatables/dataTables.colReorder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/echarts.common.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/expressInstall.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/css/font-awesome-ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/css/font-awesome-ie7.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/font/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/font/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/font/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/font/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/bootstrap.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/extras.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/font-awesome-ie7.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/_bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/_extras.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/font-awesome-ie7.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/examples/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/examples/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/img/easy-pie-chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/css/bootstrap-reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/css/style-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/avatar-mini.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/avatar-mini2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/avatar-mini3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/avatar-mini4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/avatar1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/chart-texture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/customSelect-arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/follower-avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/left-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/lock-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/product1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/img/right-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/common-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/count.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/easy-pie-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery.customSelect.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery.dcjqaccordion.2.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery.dcjqaccordion.2.7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery.nicescroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery.scrollTo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/jquery.sparkline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/flatlab/js/sparkline-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/gt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jQuery.print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery.SuperSlide/2.1.1/jquery.SuperSlide.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery.contextmenu/jquery.contextmenu.r2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery.validation/1.14.0/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery.validation/1.14.0/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery.validation/1.14.0/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery.validation/1.14.0/validate-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery/1.9.1/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery/1.9.1/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jquery/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/jselect-1.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/kindeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/lang/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/lang/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/anchor/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/autoheight/autoheight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/baidumap/baidumap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/baidumap/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/baidumap/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/clearhtml/clearhtml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/code/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/code/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/code/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/emoticons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/100.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/101.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/102.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/103.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/104.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/105.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/106.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/107.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/108.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/109.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/110.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/111.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/112.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/113.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/114.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/115.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/116.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/117.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/118.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/119.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/120.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/121.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/122.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/123.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/124.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/125.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/126.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/127.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/128.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/129.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/130.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/131.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/132.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/133.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/134.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/72.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/73.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/74.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/75.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/76.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/77.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/78.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/79.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/80.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/81.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/82.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/83.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/84.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/85.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/86.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/87.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/88.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/89.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/90.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/91.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/92.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/93.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/94.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/95.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/96.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/97.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/98.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/99.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/emoticons/images/static.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/filemanager/filemanager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/filemanager/images/file-16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/filemanager/images/file-64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/filemanager/images/folder-16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/filemanager/images/folder-64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/filemanager/images/go-up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/fixtoolbar/fixtoolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/flash/flash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/image/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/image/images/align_left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/image/images/align_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/image/images/align_top.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/image/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/insertfile/insertfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/lineheight/lineheight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/link/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/map/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/map/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/media/media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/multiimage/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/multiimage/images/select-files-en.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/multiimage/images/select-files-zh-CN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/multiimage/images/swfupload.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/multiimage/multiimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/pagebreak/pagebreak.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/plainpaste/plainpaste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/preview/preview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/quickformat/quickformat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/table/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/template/html/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/template/html/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/template/html/3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/template/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/plugins/wordpaste/wordpaste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/common/anchor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/common/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/common/flash.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/common/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/common/media.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/common/rm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/default/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/default/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/default/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/qq/editor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/qq/qq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/kindeditor/themes/simple/simple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/layer/2.4/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/layer/2.4/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/layer/2.4/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/layer/2.4/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/layer/2.4/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/layer/2.4/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/layer/2.4/skin/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/laypage/1.2/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/laypage/1.2/skin/laypage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/examples.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/lightbox2/2.8.1/js/lightbox.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/login/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/login/jquery.vide.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/login/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/nprogress/0.2.0/nprogress.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/nprogress/0.2.0/nprogress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/nprogress/0.2.0/nprogress.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/nprogress/0.2.0/nprogress.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/province/distpicker.data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/province/distpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/squid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/video/Ipad.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/video/Ipad.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/video/Ipad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/video/Ipad.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/video/Ipad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/Uploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/cropper/cropper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/cropper/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/cropper/uploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/expressInstall.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/image-upload/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/image-upload/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/images/icons.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/images/progress.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/md5-demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/md5-demo/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/requirejs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/requirejs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/requirejs/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/server/crossdomain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/server/fileupload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/server/fileupload2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/server/preview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.fis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.noimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.noimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.nolog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.nolog.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/webuploader/0.1.5/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/API_cn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/API_en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/common_ie6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/apiMenu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/apiMenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/chinese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/contact-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/english.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/lightbulb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/overlay_arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/overlay_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/overlay_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/overlay_close_IE6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/jquery-1.6.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/jquery.ztree.core-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/apiCss/zTreeStyleForApi.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/fn.zTree._z.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/fn.zTree.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/fn.zTree.getZTreeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/fn.zTree.init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.autoParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.contentType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.dataFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.dataType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.otherParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.async.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeDragOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.beforeRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onAsyncError.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onAsyncSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onDragMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onNodeCreated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.callback.onRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.check.autoCheckTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.check.chkDisabledInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.check.chkStyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.check.chkboxType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.check.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.check.nocheckInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.check.radioType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.keep.leaf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.keep.parent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.key.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.key.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.key.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.key.title.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.key.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.simpleData.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.simpleData.idKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.simpleData.pIdKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.data.simpleData.rootPId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.autoExpandTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.autoOpenTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.borderMax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.borderMin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.inner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.isCopy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.isMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.maxShowNodeNum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.minMoveSize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.next.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.drag.prev.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.editNameSelectAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.removeTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.renameTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.showRemoveBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.edit.showRenameBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.treeId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.treeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.addDiyDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.addHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.autoCancelSelected.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.dblClickExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.expandSpeed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.fontCss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.nameIsHTML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.removeHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.selectedMulti.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.showIcon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.showLine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.showTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/setting.view.txtSelectedEnable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.check_Child_State.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.check_Focus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.checkedOld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.chkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.click.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.diy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.editNameFlag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.getCheckStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.getNextNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.getParentNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.getPreNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.halfCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.icon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.iconClose.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.iconOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.iconSkin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.isAjaxing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.isFirstNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.isHidden.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.isHover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.isLastNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.isParent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.level.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.nocheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.open.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.parentTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.tId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.target.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/treeNode.zAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.addNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.cancelEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.cancelSelectedNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.checkAllNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.checkNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.copyNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.editName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.expandAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.expandNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getChangeCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getNodeByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getNodeByTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getNodeIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getNodesByFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getNodesByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getNodesByParamFuzzy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.getSelectedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.hideNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.hideNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.moveNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.reAsyncChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.refresh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.removeChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.removeNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.selectNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.setChkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.setEditable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.showNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.showNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.transformToArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.transformTozTreeNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/cn/zTreeObj.updateNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/fn.zTree._z.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/fn.zTree.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/fn.zTree.getZTreeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/fn.zTree.init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.autoParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.contentType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.dataFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.dataType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.otherParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.async.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeDragOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.beforeRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onAsyncError.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onAsyncSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onCollapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onDblClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onDrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onDragMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onDrop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onMouseDown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onMouseUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onNodeCreated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onRemove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onRename.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.callback.onRightClick.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.check.autoCheckTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.check.chkDisabledInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.check.chkStyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.check.chkboxType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.check.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.check.nocheckInherit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.check.radioType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.keep.leaf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.keep.parent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.key.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.key.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.key.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.key.title.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.key.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.simpleData.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.simpleData.idKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.simpleData.pIdKey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.data.simpleData.rootPId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.autoExpandTrigger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.autoOpenTime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.borderMax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.borderMin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.inner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.isCopy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.isMove.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.maxShowNodeNum.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.minMoveSize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.next.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.drag.prev.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.editNameSelectAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.enable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.removeTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.renameTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.showRemoveBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.edit.showRenameBtn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.treeId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.treeObj.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.addDiyDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.addHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.autoCancelSelected.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.dblClickExpand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.expandSpeed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.fontCss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.nameIsHTML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.removeHoverDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.selectedMulti.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.showIcon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.showLine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.showTitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/setting.view.txtSelectedEnable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.check_Child_State.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.check_Focus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.checked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.checkedOld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.chkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.click.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.diy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.editNameFlag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.getCheckStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.getNextNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.getParentNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.getPreNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.halfCheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.icon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.iconClose.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.iconOpen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.iconSkin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.isAjaxing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.isFirstNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.isHidden.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.isHover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.isLastNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.isParent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.level.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.name.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.nocheck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.open.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.parentTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.tId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.target.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.url.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/treeNode.zAsync.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.addNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.cancelEditName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.cancelSelectedNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.checkAllNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.checkNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.copyNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.destroy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.editName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.expandAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.expandNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getChangeCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getCheckedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getNodeByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getNodeByTId.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getNodeIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getNodesByFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getNodesByParam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getNodesByParamFuzzy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.getSelectedNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.hideNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.hideNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.moveNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.reAsyncChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.refresh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.removeChildNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.removeNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.selectNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.setChkDisabled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.setEditable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.showNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.showNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.transformToArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.transformTozTreeNodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/api/en/zTreeObj.updateNode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/metroStyle/img/line_conn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/metroStyle/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/metroStyle/img/metro.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/metroStyle/img/metro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/metroStyle/metroStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/css/zTreeStyle/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.all-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.core-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.core-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.excheck-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.excheck-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.exedit-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.exedit-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.exedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.exhide-3.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/lib/zTree/v3/js/jquery.ztree.exhide-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/css/H-ui.admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/images/acrossTab/acrossTab-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/images/admin-login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/images/admin-loginform-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/images/cn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/images/um.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/js/H-ui.admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/js/de_DE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/black/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/black/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/black/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/black/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/default/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/default/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/default/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/default/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/green/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/green/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/green/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/green/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/orange/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/orange/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/orange/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/orange/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/red/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/red/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/red/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/red/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/yellow/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/yellow/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/yellow/icon_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui.admin/skin/yellow/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/css/H-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/css/H-ui.ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/css/H-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/css/H-ui.reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/Hui-tags/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/acrossTab/acrossTab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/acrossTab/acrossTab-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/acrossTab/acrossTab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/dataTable/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/dataTable/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/dataTable/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/dropDown/icon-jt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/201.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/202.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/203.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/204.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/205.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/206.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/207.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/208.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/209.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/210.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/100.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/101.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/102.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/103.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/104.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/105.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/106.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/72.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/73.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/74.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/75.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/76.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/77.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/78.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/79.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/80.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/81.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/82.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/83.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/84.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/85.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/86.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/87.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/88.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/89.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/90.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/91.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/92.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/93.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/94.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/95.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/96.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/97.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/98.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/face/QQ/99.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/minimal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/minimal@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iCheck/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/iconpic-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/jselect/iconpic-arrow-down2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/loading/loading-b.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/loading/loading-s.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/rollpic/unslider-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/star/iconpic-star-S-default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/star/iconpic-star-S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/steps/step_arrow-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/steps/step_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/steps/step_bg-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/steps/step_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/ucnter/avatar-default-S.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/ucnter/avatar-default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/ucnter/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/ucnter/noavatar_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/validform/iconpic-error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/validform/iconpic-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/validform/iconpic-warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/verticalTab/tabNav-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/verticalTab/tabNav-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/verticalTab/tabNav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/images/verticalTab/tab_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/js/H-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/js/H-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/css/print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/css/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/css/typography.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/fonts/DroidSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/fonts/DroidSans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/collapse.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/expand.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/explorer_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/logo_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/pet_store_api.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/throbber.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/images/wordnik_api.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/geo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/ko-kr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/translator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/backbone-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/es5-shim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/handlebars-4.0.5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/highlight.9.1.0.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/highlight.9.1.0.pack_extended.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/jquery-1.8.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/jquery.ba-bbq.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/jquery.slideto.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/jquery.wiggle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/js-yaml.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/jsoneditor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/lodash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/marked.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/object-assign-pollyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/sanitize-html.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/lib/swagger-oauth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/o2c.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/swagger-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/swagger/swagger-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/temp/objects.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/temp/testJson.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/temp/testNode.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/upload/图片上传暂存文件夹.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/LimitRaterInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/LimitRaterInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/limit/RedisRaterLimiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/limit/RedisRaterLimiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/swagger/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/swagger/Swagger2Config.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/XMallCommon/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Parent/target/" />
@@ -19,6 +1155,7 @@
     <ignored path="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/target/" />
     <ignored path="$PROJECT_DIR$/generatorSqlmapCustom/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Front-Web/target/" />
+    <ignored path="$PROJECT_DIR$/XMall-Manager-Web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +1166,22 @@
     <session id="-1811225699">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,10 +1191,12 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="125" />
-          <entry key="js" value="21" />
-          <entry key="properties" value="11" />
-          <entry key="xml" value="55" />
+          <entry key="java" value="128" />
+          <entry key="js" value="22" />
+          <entry key="jsp" value="2" />
+          <entry key="properties" value="12" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -66,49 +1206,78 @@
           <entry key="Git file" value="1" />
           <entry key="HTML" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="125" />
-          <entry key="JavaScript" value="21" />
-          <entry key="Properties" value="11" />
-          <entry key="XML" value="55" />
+          <entry key="JAVA" value="128" />
+          <entry key="JSP" value="2" />
+          <entry key="JavaScript" value="22" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="12" />
+          <entry key="XML" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Customize" value="12" />
-          <entry key="java" value="13125" />
+          <entry key="java" value="13323" />
           <entry key="properties" value="402" />
-          <entry key="xml" value="3349" />
+          <entry key="xml" value="4122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13125" />
+          <entry key="JAVA" value="13323" />
           <entry key="Properties" value="402" />
           <entry key="VTL" value="12" />
-          <entry key="XML" value="3349" />
+          <entry key="XML" value="4122" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/LimitRaterInterceptor.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1207">
+              <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/annotation/RateLimiter.java">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/js/H-ui.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/temp/objects.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/upload/图片上传暂存文件夹.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/403.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/dict-add.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="85">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -116,8 +1285,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/limit/RedisRaterLimiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="1207">
+              <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,68 +1295,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/PipelineBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="1015" column="24" selection-start-line="1015" selection-start-column="24" selection-end-line="1015" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Transaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/BinaryJedis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="1736" column="14" selection-start-line="1736" selection-start-column="14" selection-end-line="1736" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/BinaryClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="485" column="14" selection-start-line="485" selection-start-column="14" selection-end-line="485" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-              <folding>
-                <element signature="e#3224#3225#0" expanded="true" />
-                <element signature="e#3269#3270#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/BinaryJedis.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="747" column="23" selection-start-line="747" selection-start-column="23" selection-end-line="747" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/resources/conf/resource.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -200,8 +1311,8 @@
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Properties" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -210,10 +1321,10 @@
       <find>cn.E</find>
       <find>cn.e</find>
       <find>druid</find>
-      <find>cn.exrick</find>
       <find>ex</find>
       <find>ext</find>
       <find>exrick</find>
+      <find>cn.exrick</find>
     </findStrings>
     <replaceStrings>
       <replace>com.alva</replace>
@@ -225,9 +1336,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-redis.xml" />
-        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbAddressMapper.java" />
         <option value="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" />
         <option value="$PROJECT_DIR$/generatorSqlmapCustom/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbMemberMapper.java" />
@@ -271,11 +1379,14 @@
         <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/webapp/swagger/lib/sanitize-html.min.js" />
         <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/webapp/swagger/lib/swagger-oauth.js" />
         <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/swagger/Swagger2Config.java" />
-        <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/InterceptorConfiguration.java" />
         <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/limit/RedisRaterLimiter.java" />
+        <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/InterceptorConfiguration.java" />
+        <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java" />
         <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/LimitRaterInterceptor.java" />
+        <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/swagger/Swagger2Config.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager-Web/pom.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml" />
+        <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -317,13 +1428,7 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="XMall-Front-Web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="XMall-Front-Web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="tomcat7" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -380,111 +1485,63 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <abbreviatePackageNames ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="limit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Front-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537866233753" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537870307845" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -499,11 +1556,11 @@
       <recent name="com.alva.front.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources" />
       <recent name="$PROJECT_DIR$/XMall-Front-Web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/XMall-Front-Web/src/main/webapp/swagger" />
-      <recent name="$PROJECT_DIR$/XMall-Front-Web/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -580,18 +1637,21 @@
       <workItem from="1537523853067" duration="2625000" />
       <workItem from="1537685012879" duration="4726000" />
       <workItem from="1537770029165" duration="4527000" />
-      <workItem from="1537839971011" duration="9174000" />
+      <workItem from="1537839971011" duration="12349000" />
+      <workItem from="1537870647063" duration="495000" />
+      <workItem from="1537871157857" duration="268000" />
+      <workItem from="1537871478562" duration="196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77743000" />
+    <option name="totallyTimeSpent" value="81877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2746365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28675282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -601,7 +1661,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4881188" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48767123" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -620,7 +1680,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.23801917" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.2374798" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,62 +1690,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/spring/applicationContext-trans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/java/com/alva/content/service/impl/PanelServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Content/XMall-Content-interface/src/main/java/com/alva/content/service/ContentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Content/XMall-Content-interface/src/main/java/com/alva/content/service/PanelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/DictService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -698,13 +1702,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/resources/spring/SpringMVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/webapp/swagger/lang/ru.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -865,43 +1862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/swagger/Swagger2Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/InterceptorConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/resources/conf/resource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/BinaryJedis.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -913,10 +1873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-          <folding>
-            <element signature="e#3224#3225#0" expanded="true" />
-            <element signature="e#3269#3270#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -948,16 +1904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/limit/RedisRaterLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/annotation/RateLimiter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -967,11 +1913,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/LimitRaterInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+        <state relative-caret-position="289">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/resources/spring/SpringMVC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/interceptor/InterceptorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/swagger/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/static/h-ui/js/H-ui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/temp/objects.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/limit/RedisRaterLimiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/resources/conf/resource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/upload/图片上传暂存文件夹.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/403.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/jsp/dict-add.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1030,11 +2067,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|XMall-Content-service</last-edited>
+          <last-edited>XMall-Manager-Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.23793103" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -31,7 +31,7 @@ public class Swagger2Config {
     static final Logger log = LoggerFactory.getLogger(Swagger2Config.class);
 
     @Bean
-    public Docket createRestApi(){
+    public Docket createRestApi() {
         log.info("开始加载Swagger2...");
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo()).select()
@@ -43,12 +43,12 @@ public class Swagger2Config {
                 .build();
     }
 
-    private ApiInfo apiInfo(){
+    private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("XMall Api Documentation")
                 .description("XMall商城前台API接口文档")
                 .termsOfServiceUrl("http://github.com/KimTae-mu")
-                .contact(new Contact("Alva","http://github.com/KimTae-mu","alva.mu@qq.com"))
+                .contact(new Contact("Alva", "http://github.com/KimTae-mu", "alva.mu@qq.com"))
                 .version("1.0.0")
                 .build();
     }
