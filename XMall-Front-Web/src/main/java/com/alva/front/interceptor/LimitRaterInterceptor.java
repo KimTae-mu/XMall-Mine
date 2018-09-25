@@ -1,13 +1,19 @@
 package com.alva.front.interceptor;
 
+import com.alva.common.annotation.RateLimiter;
+import com.alva.common.constant.CommonConstant;
+import com.alva.common.exception.XmallException;
+import com.alva.common.utils.IPInfoUtil;
 import com.alva.front.limit.RedisRaterLimiter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-
+import cn.hutool.core.util.StrUtil;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.lang.reflect.Method;
 
 /**
  * <一句话描述>,
@@ -43,5 +49,30 @@ public class LimitRaterInterceptor extends HandlerInterceptorAdapter {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         //IP限流 在线Demo所需,一秒限10个请求
+        String token1 = redisRaterLimiter.acquireTokenFromBucket("XMALL" + IPInfoUtil.getIpAddr(request), 10, 1000);
+        if(StrUtil.isBlank(token1)){
+            throw new XmallException("你手速怎么这么快,请点慢一点");
+        }
+
+        if(rateLimitEnable){
+            String token2 = redisRaterLimiter.acquireTokenFromBucket(CommonConstant.LIMIT_ALL, limit, timeout);
+            if(StrUtil.isBlank(token2)){
+                throw new XmallException("当前访问人数太多啦,请稍后再试");
+            }
+        }
+
+        HandlerMethod handlerMethod = (HandlerMethod) handler;
+        Method method = handlerMethod.getMethod();
+        RateLimiter rateLimiter = method.getAnnotation(RateLimiter.class);
+
+        if(rateLimiter != null){
+            int limit = rateLimiter.limit();
+            int timeout = rateLimiter.timeout();
+            String token3 = redisRaterLimiter.acquireTokenFromBucket(method.getName(), limit, timeout);
+            if(StrUtil.isBlank(token3)){
+                throw new XmallException("当前访问人数太多啦,请稍后再试");
+            }
+        }
+        return true;
     }
 }

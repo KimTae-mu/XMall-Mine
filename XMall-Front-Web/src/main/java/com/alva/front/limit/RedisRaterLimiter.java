@@ -60,7 +60,7 @@ public class RedisRaterLimiter {
             transaction = jedis.multi();
 
             //Zadd 将一个或多个成员元素及其分数值(score)加入到有序集当中
-            transaction.zadd((BUCKET_MONITOR + point, now, token));
+            transaction.zadd(BUCKET_MONITOR + point, now, token);
             transaction.zadd(BUCKET + point, counter, token);
             transaction.zrank(BUCKET + point, token);
             results = transaction.exec();
