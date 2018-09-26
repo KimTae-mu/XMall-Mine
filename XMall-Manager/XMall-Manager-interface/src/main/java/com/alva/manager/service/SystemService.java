@@ -1,5 +1,9 @@
 package com.alva.manager.service;
 
+import com.alva.manager.pojo.TbShiroFilter;
+
+import java.util.List;
+
 /**
  * <一句话描述>,
  * <详细介绍>,
@@ -8,4 +12,5 @@ package com.alva.manager.service;
  * @since 设计wiki | 需求wiki
  */
 public interface SystemService {
+    List<TbShiroFilter> getShiroFilter();
 }
