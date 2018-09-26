@@ -20,12 +20,12 @@
     <task:annotation-driven/>
 
     <!--连接redis 单机-->
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg name="host" value="127.0.0.1"/>
+        <constructor-arg name="port" value="6379"/>
+    </bean>
     <bean id="jedisClientPool" class="com.alva.common.jedis.JedisClientPool">
         <property name="jedisPool" ref="jedisPool"/>
-    </bean>
-    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
-        <property name="host" value="127.0.0.1"/>
-        <property name="port" value="6379"/>
     </bean>
 
     <!--配置自定义Realm-->
@@ -61,14 +61,14 @@
     <dubbo:application name="XMall-Manager-Web"/>
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
     <dubbo:reference interface="com.alva.manager.service.ItemService" id="itemService"/>
-    <dubbo:reference interface="com.alva.manager.service.MemberService" id="memberService" />
-    <dubbo:reference interface="com.alva.manager.service.ItemCatService" id="itemCatService" />
-    <dubbo:reference interface="com.alva.manager.service.UserService" id="userService" />
-    <dubbo:reference interface="com.alva.manager.service.OrderService" id="orderService" />
-    <dubbo:reference interface="com.alva.manager.service.ThanksService" id="thanksService" />
-    <dubbo:reference interface="com.alva.manager.service.SystemService" id="systemService" />
-    <dubbo:reference interface="com.alva.content.service.ContentService" id="contentService" />
-    <dubbo:reference interface="com.alva.content.service.PanelService" id="panelService" />
+    <dubbo:reference interface="com.alva.manager.service.MemberService" id="memberService"/>
+    <dubbo:reference interface="com.alva.manager.service.ItemCatService" id="itemCatService"/>
+    <dubbo:reference interface="com.alva.manager.service.UserService" id="userService"/>
+    <dubbo:reference interface="com.alva.manager.service.OrderService" id="orderService"/>
+    <dubbo:reference interface="com.alva.manager.service.ThanksService" id="thanksService"/>
+    <dubbo:reference interface="com.alva.manager.service.SystemService" id="systemService"/>
+    <dubbo:reference interface="com.alva.content.service.ContentService" id="contentService"/>
+    <dubbo:reference interface="com.alva.content.service.PanelService" id="panelService"/>
     <dubbo:reference interface="com.alva.manager.service.DictService" id="dictService"/>
     <dubbo:reference interface="com.alva.manager.service.ExpressService" id="expressService"/>
     <dubbo:reference interface="com.alva.manager.service.CountService" id="countService"/>
