@@ -1,5 +1,6 @@
 package com.alva.manager.service;
 
+import com.alva.manager.pojo.TbLog;
 import com.alva.manager.pojo.TbShiroFilter;
 
 import java.util.List;
@@ -13,4 +14,11 @@ import java.util.List;
  */
 public interface SystemService {
     List<TbShiroFilter> getShiroFilter();
+
+    /**
+     * 添加日志
+     * @param tbLog
+     * @return
+     */
+    int addLog(TbLog tbLog);
 }

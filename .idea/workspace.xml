@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/exception/RestCtrlExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/exception/RestCtrlExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/aop/SystemLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/swagger/Swagger2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbLog.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/XMallCommon/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Parent/target/" />
@@ -55,7 +57,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="144" />
+          <entry key="java" value="149" />
           <entry key="js" value="22" />
           <entry key="jsp" value="2" />
           <entry key="properties" value="12" />
@@ -70,7 +72,7 @@
           <entry key="Git file" value="1" />
           <entry key="HTML" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="144" />
+          <entry key="JAVA" value="149" />
           <entry key="JSP" value="2" />
           <entry key="JavaScript" value="22" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -81,7 +83,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Customize" value="12" />
-          <entry key="java" value="16579" />
+          <entry key="java" value="19075" />
           <entry key="properties" value="402" />
           <entry key="txt" value="13" />
           <entry key="xml" value="4571" />
@@ -89,7 +91,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16579" />
+          <entry key="JAVA" value="19075" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="402" />
           <entry key="VTL" value="12" />
@@ -110,49 +112,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/FilterUtil.java">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/swagger/Swagger2Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/task/CancelOrderJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-99" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/exception/RestCtrlExceptionHandler.java">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/aop/SystemLogAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+            <state relative-caret-position="588">
+              <caret line="202" column="27" selection-start-line="202" selection-start-column="27" selection-end-line="202" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1252#1253#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+                <element signature="e#1463#1464#0" expanded="true" />
+                <element signature="e#1524#1525#0" expanded="true" />
+                <element signature="e#4092#4093#0" expanded="true" />
+                <element signature="e#4128#4129#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
+            <state relative-caret-position="17">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/annotation/SystemControllerLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -162,6 +163,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -202,9 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/conf/db.properties" />
-        <option value="$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/conf/resource.properties" />
-        <option value="$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/mybatis/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/XMall-Content/XMall-Content-service/src/main/resources/spring/applicationContext-redis.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-service.xml" />
@@ -246,13 +253,16 @@
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyPermissionFilter.java" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/UserService.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyRealm.java" />
-        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyShiroFilterFactoryBean.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/task/CancelOrderJob.java" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/OrderService.java" />
         <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/exception/RestCtrlExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/swagger/Swagger2Config.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbLog.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/aop/SystemLogAspect.java" />
       </list>
     </option>
   </component>
@@ -396,7 +406,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
       <abbreviatePackageNames ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
@@ -434,25 +444,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="alva" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="alva" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -461,21 +452,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="alva" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="alva" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="swagger" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
@@ -516,7 +494,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537950617884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537954119341" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -528,6 +506,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.alva.manager.swagger" />
       <recent name="com.alva.front.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -616,7 +595,7 @@
       <workItem from="1537870647063" duration="495000" />
       <workItem from="1537871157857" duration="268000" />
       <workItem from="1537871478562" duration="1264000" />
-      <workItem from="1537926882662" duration="9728000" />
+      <workItem from="1537926882662" duration="13165000" />
     </task>
     <task id="LOCAL-00001" summary="Xmall-Mine manager web --&gt; shiro">
       <created>1537947202023</created>
@@ -629,13 +608,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92673000" />
+    <option name="totallyTimeSpent" value="96110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29159936" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29159936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -678,34 +657,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Xmall-Mine manager web --&gt; shiro" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/bind/annotation/ControllerAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/BinaryJedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="747" column="23" selection-start-line="747" selection-start-column="23" selection-end-line="747" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/BinaryClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="485" column="14" selection-start-line="485" selection-start-column="14" selection-end-line="485" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/BinaryJedis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
@@ -920,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.4.0/shiro-all-1.4.0.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -941,13 +885,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -999,16 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/FilterUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1016,19 +943,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/task/CancelOrderJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/exception/RestCtrlExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
+        <state relative-caret-position="1088">
           <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1042,6 +959,79 @@
           <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/task/CancelOrderJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/FilterUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/swagger/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Common/src/main/java/com/alva/common/annotation/SystemControllerLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/aop/SystemLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="202" column="27" selection-start-line="202" selection-start-column="27" selection-end-line="202" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#4092#4093#0" expanded="true" />
+            <element signature="e#4128#4129#0" expanded="true" />
           </folding>
         </state>
       </provider>
