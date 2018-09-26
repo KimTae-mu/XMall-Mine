@@ -8,4 +8,10 @@ package com.alva.manager.service;
  * @since 设计wiki | 需求wiki
  */
 public interface OrderService {
+
+    /**
+     * 定时取消订单
+     * @return
+     */
+    int cancelOrder();
 }
