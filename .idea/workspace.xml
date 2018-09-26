@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyShiroFilterFactoryBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/XMallCommon/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Parent/target/" />
@@ -61,7 +59,7 @@
           <entry key="jsp" value="2" />
           <entry key="properties" value="12" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="67" />
+          <entry key="xml" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -76,7 +74,7 @@
           <entry key="JavaScript" value="22" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="12" />
-          <entry key="XML" value="67" />
+          <entry key="XML" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -85,7 +83,7 @@
           <entry key="java" value="15338" />
           <entry key="properties" value="402" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="4130" />
+          <entry key="xml" value="4571" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -94,13 +92,22 @@
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="402" />
           <entry key="VTL" value="12" />
-          <entry key="XML" value="4130" />
+          <entry key="XML" value="4571" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/FilterUtil.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyShiroFilterFactoryBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+            <state relative-caret-position="199">
+              <caret line="22" column="91" lean-forward="true" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,15 +195,6 @@
                 <element signature="e#3731#3732#0" expanded="true" />
                 <element signature="e#3800#3801#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.4.0/shiro-all-1.4.0.jar!/org/apache/shiro/web/filter/AccessControlFilter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -291,7 +289,6 @@
         <option value="$PROJECT_DIR$/XMall-Front-Web/src/main/java/com/alva/front/swagger/Swagger2Config.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml" />
         <option value="$PROJECT_DIR$/generatorSqlmapCustom/src/main/java/com/alva/manager/mapper/TbAddressMapper.java" />
         <option value="$PROJECT_DIR$/generatorSqlmapCustom/pom.xml" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/FilterUtil.java" />
@@ -300,6 +297,7 @@
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyRealm.java" />
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyShiroFilterFactoryBean.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml" />
       </list>
     </option>
   </component>
@@ -517,6 +515,21 @@
               <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
               <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMall-Mine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMall-Manager-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -537,7 +550,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537946443365" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537947176273" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -637,12 +650,12 @@
       <workItem from="1537870647063" duration="495000" />
       <workItem from="1537871157857" duration="268000" />
       <workItem from="1537871478562" duration="1264000" />
-      <workItem from="1537926882662" duration="6713000" />
+      <workItem from="1537926882662" duration="7396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89658000" />
+    <option name="totallyTimeSpent" value="90341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -848,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/resources/spring/applicationContext-trans.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1042,11 +1048,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/shiro/MyShiroFilterFactoryBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+        <state relative-caret-position="199">
+          <caret line="22" column="91" lean-forward="true" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/resources/spring/SpringMVC.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
         </state>
       </provider>
     </entry>
