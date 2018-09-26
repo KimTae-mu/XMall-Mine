@@ -59,9 +59,9 @@ public class RestCtrlExceptionHandler {
             log.warn(e.getMessage());
             if (e.getMessage() != null && e.getMessage().contains("Maximum upload size")) {
                 errorMsg = "上传文件大小超过5MB限制";
-            } else if (e.getMessage().contains("XmallException")) {
+            } else if (e.getMessage().contains("XMallException")) {
                 errorMsg = e.getMessage();
-                errorMsg = StringUtils.substringAfter(errorMsg, "XmallException:");
+                errorMsg = StringUtils.substringAfter(errorMsg, "XMallException:");
                 errorMsg = StringUtils.substringBefore(errorMsg, "\n");
             } else {
                 errorMsg = e.getMessage();

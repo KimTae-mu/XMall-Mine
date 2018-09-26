@@ -1,8 +1,10 @@
 package com.alva.manager.exception;
 
 import com.alva.common.exception.XmallException;
+import com.alva.common.exception.XmallUploadException;
 import com.alva.common.pojo.Result;
 import com.alva.common.utils.ResultUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -43,6 +45,38 @@ public class RestCtrlExceptionHandler {
         if (e != null) {
             errorMsg = e.getMsg();
             log.warn(e.getMessage());
+        }
+        return new ResultUtil<>().setErrorMsg(errorMsg);
+    }
+
+    @ExceptionHandler(Exception.class)
+    @ResponseStatus(value = HttpStatus.OK)
+    @ResponseBody
+    public Result<Object> handleException(Exception e) {
+        String errorMsg = "Exception: ";
+        if (e != null) {
+            log.warn(e.getMessage());
+            if (e.getMessage() != null && e.getMessage().contains("Maximum upload size")) {
+                errorMsg = "上传文件大小超过5MB限制";
+            } else if (e.getMessage().contains("XMallException")) {
+                errorMsg = e.getMessage();
+                errorMsg = StringUtils.substringAfter(errorMsg, "XMallException:");
+                errorMsg = StringUtils.substringBefore(errorMsg, "\n");
+            } else {
+                errorMsg = e.getMessage();
+            }
+        }
+        return new ResultUtil<>().setErrorMsg(errorMsg);
+    }
+
+    @ExceptionHandler(XmallUploadException.class)
+    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
+    @ResponseBody
+    public Result<Object> handleUploadException(XmallUploadException e) {
+        String errorMsg = "Xmall upload exception: ";
+        if (e != null) {
+            errorMsg = e.getMsg();
+            log.warn(errorMsg);
         }
         return new ResultUtil<>().setErrorMsg(errorMsg);
     }
