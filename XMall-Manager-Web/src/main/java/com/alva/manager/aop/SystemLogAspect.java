@@ -9,10 +9,7 @@ import com.alva.manager.pojo.TbLog;
 import com.alva.manager.service.SystemService;
 import org.apache.shiro.SecurityUtils;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +22,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * <一句话描述>,
+ * <一句话描述>, Spring AOP实现日志管理
  * <详细介绍>,
  *
  * @author 穆国超
@@ -74,6 +71,11 @@ public class SystemLogAspect {
         beginTimeThreadLocal.set(beginTime);
     }
 
+    /**
+     * 后置通知(在方法执行之后返回) 用于拦截Controller层操作
+     *
+     * @param joinPoint 切点
+     */
     @After("controllerAspect()")
     public void doAfter(JoinPoint joinPoint) {
         try {
@@ -83,7 +85,7 @@ public class SystemLogAspect {
                 TbLog tbLog = new TbLog();
 
                 //日志标题
-                tbLog.setName();
+                tbLog.setName(getControllerMethodDescription(joinPoint));
                 //日志类型
                 tbLog.setType(1);
                 //日志请求url
@@ -91,7 +93,7 @@ public class SystemLogAspect {
                 //请求方式
                 tbLog.setRequestType(request.getMethod());
                 //请求参数
-                Map<String,String[]> logParams = request.getParameterMap();
+                Map<String, String[]> logParams = request.getParameterMap();
                 tbLog.setMapToParams(logParams);
                 IPInfoUtil.getInfo(request, ObjectUtil.mapToStringAll(logParams));
                 //请求用户
@@ -112,24 +114,69 @@ public class SystemLogAspect {
                 tbLog.setCreateDate(logStartTime);
 
                 //调用线程保存至数据库
+                ThreadPoolUtil.getPool().execute(new SaveSystemLogThread(tbLog, systemService));
+            }
+        } catch (Exception e) {
+            log.error("AOP后置通知异常", e);
+        }
+    }
+
+    @AfterThrowing(pointcut = "serviceAspect()", throwing = "e")
+    public void doAfterThrowing(JoinPoint joinPoint, Throwable e) {
+        try {
+            String username = SecurityUtils.getSubject().getPrincipal().toString();
+
+            if(null != username){
+                TbLog tbLog = new TbLog();
+
+                //日志标题
+                tbLog.setName(getControllerMethodDescription(joinPoint));
+                //日志类型
+                tbLog.setType(0);
+                //日志请求url
+                tbLog.setUrl(request.getRequestURI());
+                //请求方式
+                tbLog.setRequestType(request.getMethod());
+                //请求参数
+                Map<String,String[]> logParams = request.getParameterMap();
+                tbLog.setMapToParams(logParams);
+                IPInfoUtil.getInfo(request,ObjectUtil.mapToStringAll(logParams));
+                //请求用户
+                tbLog.setUser(username);
+                //请求Ip
+                tbLog.setIp(IPInfoUtil.getIpAddr(request));
+                //IP地址
+                tbLog.setIpInfo(IPInfoUtil.getIpCity(IPInfoUtil.getIpAddr(request)));
+                //请求开始时间
+                Date logStartTime = beginTimeThreadLocal.get();
+
+                long beginTime = beginTimeThreadLocal.get().getTime();
+                long endTime = System.currentTimeMillis();
+                //请求耗时
+                long logElapsedTime = endTime-beginTime;
+                tbLog.setTime(Math.toIntExact(logElapsedTime));
+                tbLog.setCreateDate(logStartTime);
+
+                //调用线程保存至数据库
                 ThreadPoolUtil.getPool().execute(new SaveSystemLogThread(tbLog,systemService));
             }
-        }catch (Exception e){
-            log.error("AOP后置通知异常",e);
+        }catch (Exception e1){
+            log.error("AOP异常通知异常",e1);
         }
     }
 
     /**
      * 保存日志
      */
-    private static class SaveSystemLogThread implements Runnable{
+    private static class SaveSystemLogThread implements Runnable {
         private TbLog tbLog;
         private SystemService systemService;
 
-        public SaveSystemLogThread(TbLog tbLog,SystemService systemService){
+        public SaveSystemLogThread(TbLog tbLog, SystemService systemService) {
             this.tbLog = tbLog;
             this.systemService = systemService;
         }
+
         @Override
         public void run() {
             systemService.addLog(tbLog);
@@ -138,11 +185,12 @@ public class SystemLogAspect {
 
     /**
      * 获取注解中对方法的描述信息,用于Controller层注解
+     *
      * @param joinPoint 切点
-     * @return  方法描述
+     * @return 方法描述
      * @throws Exception
      */
-    public static String getControllerMethodDescription(JoinPoint joinPoint) throws Exception{
+    public static String getControllerMethodDescription(JoinPoint joinPoint) throws Exception {
         //获取目标类名
         String targetName = joinPoint.getTarget().getClass().getName();
         //获取方法名
@@ -156,12 +204,12 @@ public class SystemLogAspect {
 
         String description = "";
 
-        for (Method method : methods){
-            if(!method.getName().equals(methodName)){
+        for (Method method : methods) {
+            if (!method.getName().equals(methodName)) {
                 continue;
             }
             Class[] clazzs = method.getParameterTypes();
-            if(clazzs.length != arguments.length){
+            if (clazzs.length != arguments.length) {
                 //比较方法中参数个数与从切点中获取的参数个数是否相同,原因是方法可以重载
                 continue;
             }
@@ -172,11 +220,12 @@ public class SystemLogAspect {
 
     /**
      * 获取注解中对方法的描述信息 用于Service层注解
+     *
      * @param joinPoint 切点
-     * @return  方法描述
+     * @return 方法描述
      * @throws Exception
      */
-    public static String getServiceMethodDescription(JoinPoint joinPoint) throws Exception{
+    public static String getServiceMethodDescription(JoinPoint joinPoint) throws Exception {
         //获取目标类名
         String targetName = joinPoint.getTarget().getClass().getName();
         //获取方法名
@@ -190,12 +239,12 @@ public class SystemLogAspect {
 
         String description = "";
 
-        for (Method method : methods){
-            if(!method.getName().equals(methodName)){
+        for (Method method : methods) {
+            if (!method.getName().equals(methodName)) {
                 continue;
             }
             Class[] clazzs = method.getParameterTypes();
-            if(clazzs.length != arguments.length){
+            if (clazzs.length != arguments.length) {
                 continue;
             }
             description = method.getAnnotation(SystemServiceLog.class).description();
