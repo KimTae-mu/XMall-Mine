@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/SystemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/XMallCommon/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Parent/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Content/target/" />
@@ -132,7 +128,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/SystemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
+            <state relative-caret-position="147">
               <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -676,7 +672,7 @@
       <workItem from="1537871157857" duration="268000" />
       <workItem from="1537871478562" duration="1264000" />
       <workItem from="1537926882662" duration="13801000" />
-      <workItem from="1538013206411" duration="3073000" />
+      <workItem from="1538013206411" duration="3233000" />
     </task>
     <task id="LOCAL-00001" summary="Xmall-Mine manager web --&gt; shiro">
       <created>1537947202023</created>
@@ -689,13 +685,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99819000" />
+    <option name="totallyTimeSpent" value="99979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29159936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29159936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -711,7 +706,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.47808218" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.47808218" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Spring" order="11" />
@@ -1065,7 +1060,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/SystemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
+        <state relative-caret-position="147">
           <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
