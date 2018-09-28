@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbOrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbOrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/java/com/alva/manager/service/impl/SystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/java/com/alva/manager/service/impl/SystemServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="9c5ae9fd-d8c0-4d28-972e-c934ddfdb1e8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/XMallCommon/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Parent/target/" />
     <ignored path="$PROJECT_DIR$/XMall-Content/target/" />
@@ -105,11 +99,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/java/com/alva/manager/service/impl/SystemServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="158" column="40" selection-start-line="158" selection-start-column="40" selection-end-line="158" selection-end-column="40" />
+            <state relative-caret-position="111">
+              <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="340" column="13" selection-start-line="340" selection-start-column="13" selection-end-line="340" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -740,7 +734,7 @@
       <workItem from="1537871478562" duration="1264000" />
       <workItem from="1537926882662" duration="13801000" />
       <workItem from="1538013206411" duration="4169000" />
-      <workItem from="1538098505977" duration="12308000" />
+      <workItem from="1538098505977" duration="12531000" />
     </task>
     <task id="LOCAL-00001" summary="Xmall-Mine manager web --&gt; shiro">
       <created>1537947202023</created>
@@ -753,11 +747,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113223000" />
+    <option name="totallyTimeSpent" value="113446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.29644588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -775,7 +768,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.47808218" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.47808218" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32876712" />
       <window_info anchor="bottom" id="Spring" order="11" />
@@ -1149,13 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/java/com/alva/manager/service/impl/SystemServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="158" column="40" selection-start-line="158" selection-start-column="40" selection-end-line="158" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
@@ -1166,10 +1156,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-dao/src/main/java/com/alva/manager/mapper/TbLogMapper.xml">
+    <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-service/src/main/java/com/alva/manager/service/impl/SystemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="340" column="13" selection-start-line="340" selection-start-column="13" selection-end-line="340" selection-end-column="13" />
+        <state relative-caret-position="111">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
