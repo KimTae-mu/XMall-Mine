@@ -19,6 +19,8 @@ public class TbOrderItem {
 
     private String picPath;
 
+    private Integer total;
+
     public String getId() {
         return id;
     }
@@ -81,5 +83,13 @@ public class TbOrderItem {
 
     public void setPicPath(String picPath) {
         this.picPath = picPath == null ? null : picPath.trim();
+    }
+
+    public Integer getTotal() {
+        return total;
+    }
+
+    public void setTotal(Integer total) {
+        this.total = total;
     }
 }

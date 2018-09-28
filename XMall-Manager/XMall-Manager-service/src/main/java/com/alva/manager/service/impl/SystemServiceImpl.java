@@ -8,6 +8,8 @@ import com.alva.manager.mapper.TbOrderItemMapper;
 import com.alva.manager.mapper.TbShiroFilterMapper;
 import com.alva.manager.pojo.*;
 import com.alva.manager.service.SystemService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -104,26 +106,59 @@ public class SystemServiceImpl implements SystemService {
     @Override
     public TbOrderItem getWeekHot() {
         List<TbOrderItem> list = tbOrderItemMapper.getWeekHot();
-        return null;
+        if(list == null){
+            throw new XmallException("获取热销商品失败");
+        }
+        if(list.size() == 0){
+            TbOrderItem tbOrderItem = new TbOrderItem();
+            tbOrderItem.setTotal(0);
+            tbOrderItem.setTitle("暂无数据");
+            tbOrderItem.setPicPath("");
+            return tbOrderItem;
+        }
+        return list.get(0);
     }
 
     @Override
     public DataTablesResult getLogList(int draw, int start, int length, String search, String orderColumn, String orderDir) {
-        return null;
+        DataTablesResult result = new DataTablesResult();
+        //分页
+        PageHelper.startPage(start/length+1,length);
+        List<TbLog> list = tbLogMapper.selectByMulti("%"+search+"%",orderColumn,orderDir);
+        PageInfo<TbLog> pageInfo = new PageInfo<>(list);
+
+        result.setRecordsFiltered((int) pageInfo.getTotal());
+        result.setRecordsTotal(Math.toIntExact(countLog()));
+
+        result.setDraw(draw);
+        result.setData(list);
+
+        return result;
     }
 
     @Override
     public Long countLog() {
-        return null;
+        TbLogExample tbLogExample = new TbLogExample();
+        Long result = tbLogMapper.countByExample(tbLogExample);
+        if(result == null){
+            throw new XmallException("获取日志数量失败");
+        }
+        return result;
     }
 
     @Override
     public int deleteLog(int id) {
-        return 0;
+        if(tbLogMapper.deleteByPrimaryKey(id) != 1){
+            throw new XmallException("删除日志失败");
+        }
+        return 1;
     }
 
     @Override
     public int deleteLogs(int[] ids) {
-        return 0;
+        if(tbLogMapper.deleteByPrimaryKeys(ids)!=1){
+            throw new XmallException("删除日志失败");
+        }
+        return 1;
     }
 }
