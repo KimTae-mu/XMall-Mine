@@ -1,5 +1,6 @@
 package com.alva.manager.service;
 
+import com.alva.common.pojo.DataTablesResult;
 import com.alva.manager.pojo.TbBase;
 import com.alva.manager.pojo.TbLog;
 import com.alva.manager.pojo.TbOrderItem;
@@ -70,4 +71,35 @@ public interface SystemService {
      */
     TbOrderItem getWeekHot();
 
+    /**
+     * 获取日志列表
+     * @param draw
+     * @param start
+     * @param length
+     * @param search
+     * @param orderColumn
+     * @param orderDir
+     * @return
+     */
+    DataTablesResult getLogList(int draw, int start, int length, String search, String orderColumn, String orderDir);
+
+    /**
+     * 获取系统日志总数
+     * @return
+     */
+    Long countLog();
+
+    /**
+     * 删除日志
+     * @param id
+     * @return
+     */
+    int deleteLog(int id);
+
+    /**
+     * 删除日志
+     * @param ids
+     * @return
+     */
+    int deleteLogs(int[] ids);
 }

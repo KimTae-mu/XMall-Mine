@@ -1,6 +1,5 @@
 package com.alva.manager.controller;
 
-import cn.hutool.core.util.ReUtil;
 import com.alva.common.pojo.DataTablesResult;
 import com.alva.common.pojo.Result;
 import com.alva.common.utils.IPInfoUtil;
@@ -104,6 +103,42 @@ public class SystemController {
     @ApiOperation(value = "分页获取系统日志")
     public DataTablesResult getLog(int draw, int start, int length, @RequestParam("search[value]") String search,
                                    @RequestParam("order[0][column]") int orderCol, @RequestParam("order[0][dir]") String orderDir) {
+        //获取客户端需要排序的列
+        String[] cols = {"checkbox", "id", "name", "type", "url", "request_type", "request_param", "user", "ip", "ip_info", "time", "create_date"};
+        String orderColumn = cols[orderCol];
+        //默认排序列
+        if (orderColumn == null) {
+            orderColumn = "create_date";
+        }
+        //获取排序方式 默认为desc(asc)
+        if(orderDir == null){
+            orderDir = "desc";
+        }
+        DataTablesResult result = systemService.getLogList(draw,start,length,search,orderColumn,orderDir);
+        return result;
+    }
 
+    @RequestMapping(value = "/sys/log/count",method = RequestMethod.GET)
+    @ApiOperation(value = "获取系统日志总数")
+    public Result<Object> countLog(){
+        Long result = systemService.countLog();
+        return new ResultUtil<Object>().setData(result);
+    }
+
+    @RequestMapping(value = "/sys/log/del/{ids}",method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除系统日志")
+    public Result<Object> delLog(@PathVariable int[] ids){
+        for (int id : ids){
+            systemService.deleteLog(id);
+        }
+        return new ResultUtil<Object>().setData(null);
+    }
+    @RequestMapping(value = "/sys/lgo/del/{ids}",method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除系统日志")
+    public Result<Object> delLogs(@PathVariable int[] ids){
+        if(ids!=null && ids.length>0){
+            systemService.deleteLogs(ids);
+        }
+        return new ResultUtil<Object>().setData(null);
     }
 }

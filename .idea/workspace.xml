@@ -82,7 +82,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Customize" value="12" />
-          <entry key="java" value="21726" />
+          <entry key="java" value="22645" />
           <entry key="properties" value="402" />
           <entry key="txt" value="13" />
           <entry key="xml" value="4571" />
@@ -90,7 +90,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="21726" />
+          <entry key="JAVA" value="22645" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="402" />
           <entry key="VTL" value="12" />
@@ -115,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/SystemController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="564">
-              <caret line="105" column="110" selection-start-line="105" selection-start-column="110" selection-end-line="105" selection-end-column="110" />
+              <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+            <state relative-caret-position="581">
+              <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -280,8 +280,8 @@
         <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-pojo/src/main/java/com/alva/manager/pojo/TbLog.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/aop/SystemLogAspect.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/PageController.java" />
-        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" />
         <option value="$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/SystemController.java" />
+        <option value="$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java" />
       </list>
     </option>
   </component>
@@ -667,7 +667,7 @@
       <workItem from="1537871478562" duration="1264000" />
       <workItem from="1537926882662" duration="13801000" />
       <workItem from="1538013206411" duration="4169000" />
-      <workItem from="1538098505977" duration="3811000" />
+      <workItem from="1538098505977" duration="5453000" />
     </task>
     <task id="LOCAL-00001" summary="Xmall-Mine manager web --&gt; shiro">
       <created>1537947202023</created>
@@ -680,7 +680,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104726000" />
+    <option name="totallyTimeSpent" value="106368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -1041,15 +1041,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager/XMall-Manager-interface/src/main/java/com/alva/manager/service/SystemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+        <state relative-caret-position="581">
+          <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XMall-Manager-Web/src/main/java/com/alva/manager/controller/SystemController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="564">
-          <caret line="105" column="110" selection-start-line="105" selection-start-column="110" selection-end-line="105" selection-end-column="110" />
+          <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
