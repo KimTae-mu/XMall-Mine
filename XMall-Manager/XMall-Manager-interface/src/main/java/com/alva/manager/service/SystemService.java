@@ -21,4 +21,24 @@ public interface SystemService {
      * @return
      */
     int addLog(TbLog tbLog);
+
+    /**
+     * 统计过滤链数目
+     * @return
+     */
+    Long countShiroFilter();
+
+    /**
+     * 添加Shiro过滤链
+     * @param tbShiroFilter
+     * @return
+     */
+    int addShiroFilter(TbShiroFilter tbShiroFilter);
+
+    /**
+     * 更新Shiro过滤链
+     * @param tbShiroFilter
+     * @return
+     */
+    int updateShiro(TbShiroFilter tbShiroFilter);
 }

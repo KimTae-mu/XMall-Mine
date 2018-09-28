@@ -1,7 +1,9 @@
 package com.alva.manager.controller;
 
+import cn.hutool.core.util.ReUtil;
 import com.alva.common.pojo.DataTablesResult;
 import com.alva.common.pojo.Result;
+import com.alva.common.utils.ResultUtil;
 import com.alva.manager.pojo.TbShiroFilter;
 import com.alva.manager.pojo.TbUser;
 import com.alva.manager.service.SystemService;
@@ -40,8 +42,23 @@ public class SystemController {
     }
 
     @RequestMapping(value = "/sys/shiro/count",method = RequestMethod.GET)
-    @ApiOperation(value = "统计shiro过滤链数")
+    @ApiOperation(value = "统计Shiro过滤链数")
     public Result<Object> getUserCount(){
+        Long result = systemService.countShiroFilter();
+        return new ResultUtil<Object>().setData(result);
+    }
 
+    @RequestMapping(value = "/sys/shiro/add",method = RequestMethod.POST)
+    @ApiOperation(value = "添加Shiro过滤链")
+    public Result<Object> addShiro(@ModelAttribute TbShiroFilter tbShiroFilter){
+        systemService.addShiroFilter(tbShiroFilter);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/sys/shiro/update",method = RequestMethod.POST)
+    @ApiOperation( value = "更新Shiro过滤链")
+    public Result<Object> updateShiro(@ModelAttribute TbShiroFilter tbShiroFilter){
+        systemService.updateShiro(tbShiroFilter);
+        return new ResultUtil<Object>().setData(null);
     }
 }
