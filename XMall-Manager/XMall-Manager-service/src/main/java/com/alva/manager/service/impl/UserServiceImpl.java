@@ -8,11 +8,14 @@ import com.alva.manager.pojo.TbRoleExample;
 import com.alva.manager.pojo.TbUser;
 import com.alva.manager.pojo.TbUserExample;
 import com.alva.manager.service.UserService;
+import org.apache.activemq.openwire.v1.XATransactionIdMarshaller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -70,5 +73,80 @@ public class UserServiceImpl implements UserService {
             throw new XmallException("获取所有角色列表失败");
         }
         return list;
+    }
+
+    @Override
+    public int addUser(TbUser tbUser) {
+        if (!getUserByName(tbUser.getUsername())) {
+            throw new XmallException("用户名已存在");
+        }
+        if (!getUserByPhone(tbUser.getPhone())) {
+            throw new XmallException("手机号已存在");
+        }
+        if (!getUserByEmail(tbUser.getEmail())) {
+            throw new XmallException("邮箱已存在");
+        }
+        String md5Pass = DigestUtils.md5DigestAsHex(tbUser.getPassword().getBytes());
+        tbUser.setPassword(md5Pass);
+        tbUser.setState(1);
+        tbUser.setCreated(new Date());
+        tbUser.setUpdated(new Date());
+
+        if (tbUserMapper.insert(tbUser) != 1) {
+            throw new XmallException("添加用户失败");
+        }
+        return 1;
+
+    }
+
+    @Override
+    public boolean getUserByEmail(String email) {
+        List<TbUser> list;
+        TbUserExample example = new TbUserExample();
+        TbUserExample.Criteria criteria = example.createCriteria();
+        criteria.andEmailEqualTo(email);
+        try {
+            list = tbUserMapper.selectByExample(example);
+        } catch (Exception e) {
+            throw new XmallException("根据Email查询用户失败");
+        }
+        if (list.size() > 0) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean getUserByPhone(String phone) {
+        List<TbUser> list;
+        TbUserExample example = new TbUserExample();
+        TbUserExample.Criteria criteria = example.createCriteria();
+        criteria.andPhoneEqualTo(phone);
+        try {
+            list = tbUserMapper.selectByExample(example);
+        } catch (Exception e) {
+            throw new XmallException("根据Phone查询用户失败");
+        }
+        if (list.size() > 0) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean getUserByName(String username) {
+        List<TbUser> list;
+        TbUserExample example = new TbUserExample();
+        TbUserExample.Criteria criteria = example.createCriteria();
+        criteria.andUsernameEqualTo(username);
+        try {
+            list = tbUserMapper.selectByExample(example);
+        } catch (Exception e) {
+            throw new XmallException("根据Username查询用户失败");
+        }
+        if (list.size() > 0) {
+            return false;
+        }
+        return true;
     }
 }

@@ -21,4 +21,12 @@ public interface UserService {
     TbUser getUserByUsername(String username);
 
     List<TbRole> getAllRoles();
+
+    int addUser(TbUser tbUser);
+
+    boolean getUserByEmail(String email);
+
+    boolean getUserByPhone(String phone);
+
+    boolean getUserByName(String username);
 }

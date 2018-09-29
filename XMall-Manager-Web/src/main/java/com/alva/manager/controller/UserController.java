@@ -16,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -101,6 +102,14 @@ public class UserController {
        List<TbRole> list = userService.getAllRoles();
        return new ResultUtil<List<TbRole>>().setData(list);
     }
+
+    @RequestMapping(value = "/user/addUser",method = RequestMethod.POST)
+    @ApiOperation(value = "注册用户")
+    public Result<Object> addUser(@ModelAttribute TbUser tbUser){
+        userService.addUser(tbUser);
+        return new ResultUtil<Object>().setData(null);
+    }
+
 
     @RequestMapping(value = "/user/userInfo", method = RequestMethod.GET)
     @ApiOperation(value = "获取登录用户信息")
