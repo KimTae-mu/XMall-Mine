@@ -119,4 +119,10 @@ public class UserController {
         user.setPassword(null);
         return new ResultUtil<TbUser>().setData(user);
     }
+
+    @RequestMapping(value = "/user/updateUser",method = RequestMethod.POST)
+    @ApiOperation(value = "更新用户信息")
+    public Result<Object> updateUser(@ModelAttribute TbUser tbUser){
+
+    }
 }
