@@ -1,7 +1,9 @@
 package com.alva.manager.service;
 
+import com.alva.manager.pojo.TbRole;
 import com.alva.manager.pojo.TbUser;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -17,4 +19,6 @@ public interface UserService {
     Set<String> getPermissions(String username);
 
     TbUser getUserByUsername(String username);
+
+    List<TbRole> getAllRoles();
 }

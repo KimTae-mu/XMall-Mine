@@ -211,7 +211,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map">
+    <update id="updateByExampleSelective" parameterType="map">
     update tb_user
     <set>
       <if test="record.id != null">
@@ -335,4 +335,24 @@
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  <select id="getRoles" resultType="java.lang.String">
+    SELECT
+    r.name
+    FROM
+    tb_user t
+    JOIN tb_role r ON t.role_id = r.id
+    WHERE
+    t.username = #{username}
+  </select>
+  <select id="getPermissions" resultType="java.lang.String">
+    SELECT
+    p.permission
+    FROM
+    tb_user t
+    JOIN tb_role r ON t.role_id = r.id
+    JOIN tb_role_perm rp ON rp.role_id = t.role_id
+    JOIN tb_permission p ON rp.permission_id = p.id
+    WHERE
+    t.username = #{username}
+  </select>
 </mapper>

@@ -5,6 +5,7 @@ import com.alva.manager.pojo.TbUserExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Set;
 
 public interface TbUserMapper {
     long countByExample(TbUserExample example);
@@ -28,4 +29,8 @@ public interface TbUserMapper {
     int updateByPrimaryKeySelective(TbUser record);
 
     int updateByPrimaryKey(TbUser record);
+
+    Set<String> getRoles(@Param("username") String username);
+
+    Set<String> getPermissions(@Param("username") String username);
 }
