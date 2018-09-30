@@ -16,15 +16,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * <一句话描述>,
@@ -132,6 +128,56 @@ public class UserController {
     public Result<Object> addRole(@ModelAttribute TbRole role){
         userService.addRole(role);
         return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/username",method = RequestMethod.GET)
+    @ApiOperation(value = "判断用户名是存在")
+    public boolean getUserByName(String username){
+        return userService.getUserByName(username);
+    }
+
+    @RequestMapping(value = "/user/phone",method = RequestMethod.GET)
+    @ApiOperation(value = "判断手机是否存在")
+    public boolean getUserByPhone(String phone){
+        return userService.getUserByPhone(phone);
+    }
+
+    @RequestMapping(value = "/user/email",method = RequestMethod.GET)
+    @ApiOperation(value = "判断邮箱是否存在")
+    public boolean getUserByEmail(String email){
+        return userService.getUserByEmail(email);
+    }
+
+    public Result<Object> getUserCount(){
+
+    }
+
+    public Result<Object> delUser(Long[] ids){
+
+    }
+
+    public Result<Object> changePass(TbUser tbUser){
+
+    }
+
+    public Result<Object> startUser(Long id){
+
+    }
+
+    public Result<Object> stopUser(Long id){
+
+    }
+
+    public boolean getUserByEditEmail(Long id,String email){
+
+    }
+
+    public boolean getUserByEditPhone(@PathVariable Long id, String phone){
+
+    }
+
+    public boolean getUserByEditName(@PathVariable Long id, String username){
+
     }
 
 
