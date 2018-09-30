@@ -29,4 +29,10 @@ public interface UserService {
     boolean getUserByPhone(String phone);
 
     boolean getUserByName(String username);
+
+    int updateUser(TbUser tbUser);
+
+    int addRole(TbRole role);
+
+    TbRole getRoleByRoleName(String name);
 }

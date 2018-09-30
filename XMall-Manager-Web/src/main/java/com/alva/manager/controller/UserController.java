@@ -123,6 +123,16 @@ public class UserController {
     @RequestMapping(value = "/user/updateUser",method = RequestMethod.POST)
     @ApiOperation(value = "更新用户信息")
     public Result<Object> updateUser(@ModelAttribute TbUser tbUser){
-
+        userService.updateUser(tbUser);
+        return new ResultUtil<Object>().setData(null);
     }
+
+    @RequestMapping(value = "/user/addRole",method = RequestMethod.POST)
+    @ApiOperation(value = "添加角色")
+    public Result<Object> addRole(@ModelAttribute TbRole role){
+        userService.addRole(role);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+
 }
