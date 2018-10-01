@@ -12,6 +12,7 @@ import io.swagger.annotations.ApiOperation;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.quartz.ObjectAlreadyExistsException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,49 +60,49 @@ public class UserController {
             //gt_server正常,进行二次验证
             gtResult = geetestLib.enhencedValidateRequest(challenge, validate, seccode, param);
             log.info(username + "极验二次验证结果: " + gtResult);
-        }else {
+        } else {
             //gt_server非正常的情况下,进行failBack模式验证
             log.info("failback:use your own server captcha validate");
             geetestLib.failbackValidateRequest(challenge, validate, seccode);
             log.info(username + "极验failback验证结果: " + gtResult);
         }
 
-        if(gtResult == 1){
+        if (gtResult == 1) {
             //验证成功
             Subject subject = SecurityUtils.getSubject();
             //MD5加密
             String md5Pass = DigestUtils.md5DigestAsHex(password.getBytes());
-            UsernamePasswordToken token = new UsernamePasswordToken(username,md5Pass);
+            UsernamePasswordToken token = new UsernamePasswordToken(username, md5Pass);
             try {
                 subject.login(token);
                 return new ResultUtil<Object>().setData(null);
-            }catch (Exception e){
+            } catch (Exception e) {
                 return new ResultUtil<Object>().setErrorMsg("用户名或密码错误");
             }
-        }else {
+        } else {
             //验证失败
             return new ResultUtil<Object>().setErrorMsg("验证失败");
         }
     }
 
-    @RequestMapping(value = "/user/logout",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/logout", method = RequestMethod.GET)
     @ApiOperation(value = "用户登出")
-    public Result<Object> logout(){
+    public Result<Object> logout() {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/user/getAllRoles",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/getAllRoles", method = RequestMethod.GET)
     @ApiOperation(value = "获取所有角色")
-    public Result<List<TbRole>> getAllRoles(){
-       List<TbRole> list = userService.getAllRoles();
-       return new ResultUtil<List<TbRole>>().setData(list);
+    public Result<List<TbRole>> getAllRoles() {
+        List<TbRole> list = userService.getAllRoles();
+        return new ResultUtil<List<TbRole>>().setData(list);
     }
 
-    @RequestMapping(value = "/user/addUser",method = RequestMethod.POST)
+    @RequestMapping(value = "/user/addUser", method = RequestMethod.POST)
     @ApiOperation(value = "注册用户")
-    public Result<Object> addUser(@ModelAttribute TbUser tbUser){
+    public Result<Object> addUser(@ModelAttribute TbUser tbUser) {
         userService.addUser(tbUser);
         return new ResultUtil<Object>().setData(null);
     }
@@ -116,68 +117,89 @@ public class UserController {
         return new ResultUtil<TbUser>().setData(user);
     }
 
-    @RequestMapping(value = "/user/updateUser",method = RequestMethod.POST)
+    @RequestMapping(value = "/user/updateUser", method = RequestMethod.POST)
     @ApiOperation(value = "更新用户信息")
-    public Result<Object> updateUser(@ModelAttribute TbUser tbUser){
+    public Result<Object> updateUser(@ModelAttribute TbUser tbUser) {
         userService.updateUser(tbUser);
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/user/addRole",method = RequestMethod.POST)
+    @RequestMapping(value = "/user/addRole", method = RequestMethod.POST)
     @ApiOperation(value = "添加角色")
-    public Result<Object> addRole(@ModelAttribute TbRole role){
+    public Result<Object> addRole(@ModelAttribute TbRole role) {
         userService.addRole(role);
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/user/username",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/username", method = RequestMethod.GET)
     @ApiOperation(value = "判断用户名是存在")
-    public boolean getUserByName(String username){
+    public boolean getUserByName(String username) {
         return userService.getUserByName(username);
     }
 
-    @RequestMapping(value = "/user/phone",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/phone", method = RequestMethod.GET)
     @ApiOperation(value = "判断手机是否存在")
-    public boolean getUserByPhone(String phone){
+    public boolean getUserByPhone(String phone) {
         return userService.getUserByPhone(phone);
     }
 
-    @RequestMapping(value = "/user/email",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/email", method = RequestMethod.GET)
     @ApiOperation(value = "判断邮箱是否存在")
-    public boolean getUserByEmail(String email){
+    public boolean getUserByEmail(String email) {
         return userService.getUserByEmail(email);
     }
 
-    public Result<Object> getUserCount(){
-
+    @RequestMapping(value = "/user/userCount", method = RequestMethod.GET)
+    @ApiOperation(value = "统计用户数")
+    public Result<Object> getUserCount() {
+        Long result = userService.countUser();
+        return new ResultUtil<Object>().setData(result);
     }
 
-    public Result<Object> delUser(Long[] ids){
-
+    @RequestMapping(value = "/user/delUser/{ids}", method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除用户")
+    public Result<Object> delUser(@PathVariable Long[] ids) {
+        userService.delUser(ids);
+        return new ResultUtil<Object>().setData(null);
     }
 
-    public Result<Object> changePass(TbUser tbUser){
-
+    @RequestMapping(value = "/user/changePass", method = RequestMethod.POST)
+    @ApiOperation(value = "修改用户密码")
+    public Result<Object> changePass(@ModelAttribute TbUser tbUser) {
+        userService.changePass(tbUser);
+        return new ResultUtil<Object>().setData(null);
     }
 
-    public Result<Object> startUser(Long id){
-
+    @RequestMapping(value = "/user/startUser/{id}", method = RequestMethod.PUT)
+    @ApiOperation(value = "启用用户")
+    public Result<Object> startUser(@PathVariable Long id) {
+        userService.startUser(id, 1);
+        return new ResultUtil<Object>().setData(null);
     }
 
-    public Result<Object> stopUser(Long id){
-
+    @RequestMapping(value = "/user/stopUser/{id}", method = RequestMethod.PUT)
+    @ApiOperation(value = "停用用户")
+    public Result<Object> stopUser(Long id) {
+        userService.stopUser(id, 0);
+        return new ResultUtil<Object>().setData(null);
     }
 
-    public boolean getUserByEditEmail(Long id,String email){
-
+    @RequestMapping(value = "/user/edit/email/{id}", method = RequestMethod.GET)
+    @ApiOperation(value = "判断编辑用户名是否存在")
+    public boolean getUserByEditEmail(@PathVariable Long id, String email) {
+        return userService.getUserByEditEmail(id, email);
     }
 
-    public boolean getUserByEditPhone(@PathVariable Long id, String phone){
-
+    @RequestMapping(value = "/user/edit/phone/{id}", method = RequestMethod.GET)
+    @ApiOperation(value = "判断编辑用户名是否存在")
+    public boolean getUserByEditPhone(@PathVariable Long id, String phone) {
+        return userService.getUserByEditPhone(id, phone);
     }
 
-    public boolean getUserByEditName(@PathVariable Long id, String username){
-
+    @RequestMapping(value = "/user/edit/username/{id}", method = RequestMethod.GET)
+    @ApiOperation(value = "判断编辑用户名是否存在")
+    public boolean getUserByEditName(@PathVariable Long id, String username) {
+        return userService.getUserByEditName(id, username);
     }
 
 
