@@ -208,4 +208,26 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+    @Override
+    public Long countUser() {
+        TbUserExample example = new TbUserExample();
+        Long result = tbUserMapper.countByExample(example);
+        if (result == null) {
+            throw new XmallException("统计用户数失败!");
+        }
+        return result;
+    }
+
+    @Override
+    public int delUser(Long[] ids) {
+        if (ids == null || ids.length < 0) {
+            throw new XmallException("参数有误!");
+        }
+        int result = tbUserMapper.deleteByIds(ids);
+        if (result != 1) {
+            throw new XmallException("删除有误!");
+        }
+        return 1;
+    }
+
 }

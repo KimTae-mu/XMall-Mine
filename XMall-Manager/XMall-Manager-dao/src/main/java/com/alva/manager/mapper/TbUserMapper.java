@@ -33,4 +33,6 @@ public interface TbUserMapper {
     Set<String> getRoles(@Param("username") String username);
 
     Set<String> getPermissions(@Param("username") String username);
+
+    int deleteByIds(@Param("ids") Long[] ids);
 }

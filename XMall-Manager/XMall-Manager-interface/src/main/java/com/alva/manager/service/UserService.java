@@ -35,4 +35,8 @@ public interface UserService {
     int addRole(TbRole role);
 
     TbRole getRoleByRoleName(String name);
+
+    Long countUser();
+
+    int delUser(Long[] ids);
 }
