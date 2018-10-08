@@ -252,4 +252,23 @@ public class UserServiceImpl implements UserService {
         return 1;
     }
 
+    @Override
+    public boolean getUserByEditEmail(Long id, String email) {
+        TbUser tbUser = getUserById(id);
+        boolean result = true;
+        if(tbUser.getEmail() == null || !tbUser.getEmail().equals(email)){
+            result = getUserByEmail(email);
+        }
+        return result;
+    }
+
+    private TbUser getUserById(Long id) {
+        TbUser tbUser = tbUserMapper.selectByPrimaryKey(id);
+        if(tbUser == null){
+            throw new XmallException("通过ID获取用户失败");
+        }
+        tbUser.setPassword("");
+        return tbUser;
+    }
+
 }

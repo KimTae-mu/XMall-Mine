@@ -43,4 +43,6 @@ public interface UserService {
     int changeUserState(Long id, int i);
 
     int changePassword(TbUser tbUser);
+
+    boolean getUserByEditEmail(Long id, String email);
 }
