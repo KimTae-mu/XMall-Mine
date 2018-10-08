@@ -45,4 +45,6 @@ public interface UserService {
     int changePassword(TbUser tbUser);
 
     boolean getUserByEditEmail(Long id, String email);
+
+    boolean getUserByEditPhone(Long id, String phone);
 }

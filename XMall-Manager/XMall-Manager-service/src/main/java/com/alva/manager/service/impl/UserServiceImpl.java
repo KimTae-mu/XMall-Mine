@@ -256,15 +256,25 @@ public class UserServiceImpl implements UserService {
     public boolean getUserByEditEmail(Long id, String email) {
         TbUser tbUser = getUserById(id);
         boolean result = true;
-        if(tbUser.getEmail() == null || !tbUser.getEmail().equals(email)){
+        if (tbUser.getEmail() == null || !tbUser.getEmail().equals(email)) {
             result = getUserByEmail(email);
+        }
+        return result;
+    }
+
+    @Override
+    public boolean getUserByEditPhone(Long id, String phone) {
+        TbUser userById = getUserById(id);
+        boolean result = true;
+        if (userById.getPhone() == null || !userById.getPhone().equals(phone)) {
+            result = getUserByPhone(phone);
         }
         return result;
     }
 
     private TbUser getUserById(Long id) {
         TbUser tbUser = tbUserMapper.selectByPrimaryKey(id);
-        if(tbUser == null){
+        if (tbUser == null) {
             throw new XmallException("通过ID获取用户失败");
         }
         tbUser.setPassword("");
