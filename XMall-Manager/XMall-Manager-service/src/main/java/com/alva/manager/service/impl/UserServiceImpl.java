@@ -272,6 +272,16 @@ public class UserServiceImpl implements UserService {
         return result;
     }
 
+    @Override
+    public boolean getUserByEditName(Long id, String username) {
+        TbUser userById = getUserById(id);
+        boolean result = true;
+        if (userById.getUsername() == null || !userById.getUsername().equals(username)) {
+            result = getUserByName(username);
+        }
+        return result;
+    }
+
     private TbUser getUserById(Long id) {
         TbUser tbUser = tbUserMapper.selectByPrimaryKey(id);
         if (tbUser == null) {

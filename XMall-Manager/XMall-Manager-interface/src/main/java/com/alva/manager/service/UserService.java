@@ -47,4 +47,6 @@ public interface UserService {
     boolean getUserByEditEmail(Long id, String email);
 
     boolean getUserByEditPhone(Long id, String phone);
+
+    boolean getUserByEditName(Long id, String username);
 }
