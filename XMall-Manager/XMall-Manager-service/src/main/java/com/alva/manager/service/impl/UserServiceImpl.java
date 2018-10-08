@@ -9,6 +9,7 @@ import com.alva.manager.mapper.TbUserMapper;
 import com.alva.manager.pojo.*;
 import com.alva.manager.service.UserService;
 import org.apache.activemq.openwire.v1.XATransactionIdMarshaller;
+import org.apache.ibatis.builder.xml.XMLMapperBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -316,6 +317,69 @@ public class UserServiceImpl implements UserService {
         }
         result.setData(list);
         return result;
+    }
+
+    @Override
+    public boolean getRoleByEditName(int id, String name) {
+        TbRole tbRole = tbRoleMapper.selectByPrimaryKey(id);
+        TbRole newRole = null;
+        if (tbRole == null) {
+            throw new XmallException("通过ID获取角色失败");
+        }
+        if (!tbRole.getName().equals(name)) {
+            newRole = getRoleByRoleName(name);
+        }
+        if (newRole == null) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public int updateRole(TbRole tbRole) {
+        if(!getRoleByEditName(tbRole.getId(),tbRole.getName())){
+            throw new XmallException("该角色名已存在");
+        }
+        if(tbRoleMapper.updateByPrimaryKey(tbRole)!=1){
+            throw new XmallException("更新角色失败");
+        }
+        if(tbRole.getRoles()!= null){
+            //删除已有角色-权限
+            TbRolePermExample example = new TbRolePermExample();
+            TbRolePermExample.Criteria criteria = example.createCriteria();
+            criteria.andRoleIdEqualTo(tbRole.getId());
+            List<TbRolePerm> tbRolePerms = tbRolePermMapper.selectByExample(example);
+            if(tbRolePerms != null){
+                for (TbRolePerm tbRolePerm : tbRolePerms){
+                    if(tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId())!=1){
+                        throw new XmallException("删除角色权限失败");
+                    }
+                }
+            }
+            //新增
+            for (int i = 0; i < tbRole.getRoles().length; i++) {
+                TbRolePerm tbRolePerm = new TbRolePerm();
+                tbRolePerm.setRoleId(tbRole.getId());
+                tbRolePerm.setPermissionId(tbRole.getRoles()[i]);
+
+                if(tbRolePermMapper.insert(tbRolePerm)!=1){
+                    throw new XmallException("编辑角色-权限失败");
+                }
+            }
+        }else {
+            TbRolePermExample example = new TbRolePermExample();
+            TbRolePermExample.Criteria criteria = example.createCriteria();
+            criteria.andRoleIdEqualTo(tbRole.getId());
+            List<TbRolePerm> tbRolePerms = tbRolePermMapper.selectByExample(example);
+            if(tbRolePerms != null){
+                for (TbRolePerm tbRolePerm : tbRolePerms){
+                    if(tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId())!=1){
+                        throw new XmallException("删除角色权限失败");
+                    }
+                }
+            }
+        }
+        return 1;
     }
 
     private TbUser getUserById(Long id) {

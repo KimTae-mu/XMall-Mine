@@ -52,4 +52,8 @@ public interface UserService {
     boolean getUserByEditName(Long id, String username);
 
     DataTablesResult getRoleList();
+
+    boolean getRoleByEditName(int id, String name);
+
+    int updateRole(TbRole tbRole);
 }

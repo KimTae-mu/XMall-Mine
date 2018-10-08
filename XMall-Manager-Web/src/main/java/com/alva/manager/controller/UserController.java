@@ -40,9 +40,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/geetestInit",method = RequestMethod.GET)
+    @RequestMapping(value = "/geetestInit", method = RequestMethod.GET)
     @ApiOperation(value = "极验初始化")
-    public String geetesrInit(HttpServletRequest request){
+    public String geetesrInit(HttpServletRequest request) {
 
         GeetestLib gtSdk = new GeetestLib(GeetestLib.id, GeetestLib.key, GeetestLib.newfailback);
 
@@ -118,12 +118,26 @@ public class UserController {
     }
 
 
-
     @RequestMapping(value = "/user/getAllRoles", method = RequestMethod.GET)
     @ApiOperation(value = "获取所有角色")
     public Result<List<TbRole>> getAllRoles() {
         List<TbRole> list = userService.getAllRoles();
         return new ResultUtil<List<TbRole>>().setData(list);
+    }
+
+    @RequestMapping(value = "/user/roleName", method = RequestMethod.GET)
+    @ApiOperation("判断角色是否存在")
+    public boolean roleName(String name) {
+        if (userService.getRoleByRoleName(name) != null) {
+            return false;
+        }
+        return true;
+    }
+
+    @RequestMapping(value = "/user/edit/roleName/{id}",method = RequestMethod.GET)
+    @ApiOperation(value = "判断编辑角色是否已存在")
+    public boolean roleName(int id,String name){
+        return userService.getRoleByEditName(id,name);
     }
 
     @RequestMapping(value = "/user/addUser", method = RequestMethod.POST)
@@ -133,9 +147,9 @@ public class UserController {
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/user/roleList",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/roleList", method = RequestMethod.GET)
     @ApiOperation(value = "获取角色列表")
-    public DataTablesResult getRoleList(){
+    public DataTablesResult getRoleList() {
         DataTablesResult result = userService.getRoleList();
         return result;
     }
@@ -160,6 +174,13 @@ public class UserController {
     @ApiOperation(value = "添加角色")
     public Result<Object> addRole(@ModelAttribute TbRole role) {
         userService.addRole(role);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/updateRole",method = RequestMethod.POST)
+    @ApiOperation(value = "更新角色")
+    public Result<Object> updateRole(@ModelAttribute TbRole tbRole){
+        userService.updateRole(tbRole);
         return new ResultUtil<Object>().setData(null);
     }
 
