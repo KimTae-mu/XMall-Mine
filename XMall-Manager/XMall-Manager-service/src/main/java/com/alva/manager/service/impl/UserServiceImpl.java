@@ -230,4 +230,26 @@ public class UserServiceImpl implements UserService {
         return 1;
     }
 
+    @Override
+    public int changeUserState(Long id, int state) {
+        TbUser tbUser = tbUserMapper.selectByPrimaryKey(id);
+        tbUser.setState(state);
+        if (tbUserMapper.updateByPrimaryKey(tbUser) != 1) {
+            throw new XmallException("更新用户状态失败");
+        }
+        return 1;
+    }
+
+    @Override
+    public int changePassword(TbUser tbUser) {
+        TbUser old = tbUserMapper.selectByPrimaryKey(tbUser.getId());
+        old.setUpdated(new Date());
+        String md5Pass = DigestUtils.md5DigestAsHex(tbUser.getPassword().getBytes());
+        old.setPassword(md5Pass);
+        if (tbUserMapper.updateByPrimaryKey(old) != 1) {
+            throw new XmallException("修改用户密码失败");
+        }
+        return 1;
+    }
+
 }

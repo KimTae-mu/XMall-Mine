@@ -166,21 +166,21 @@ public class UserController {
     @RequestMapping(value = "/user/changePass", method = RequestMethod.POST)
     @ApiOperation(value = "修改用户密码")
     public Result<Object> changePass(@ModelAttribute TbUser tbUser) {
-        userService.changePass(tbUser);
+        userService.changePassword(tbUser);
         return new ResultUtil<Object>().setData(null);
     }
 
     @RequestMapping(value = "/user/startUser/{id}", method = RequestMethod.PUT)
     @ApiOperation(value = "启用用户")
     public Result<Object> startUser(@PathVariable Long id) {
-        userService.startUser(id, 1);
+        userService.changeUserState(id, 1);
         return new ResultUtil<Object>().setData(null);
     }
 
     @RequestMapping(value = "/user/stopUser/{id}", method = RequestMethod.PUT)
     @ApiOperation(value = "停用用户")
     public Result<Object> stopUser(Long id) {
-        userService.stopUser(id, 0);
+        userService.changeUserState(id, 0);
         return new ResultUtil<Object>().setData(null);
     }
 

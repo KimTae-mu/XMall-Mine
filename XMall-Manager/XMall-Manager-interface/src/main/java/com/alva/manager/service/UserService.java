@@ -39,4 +39,8 @@ public interface UserService {
     Long countUser();
 
     int delUser(Long[] ids);
+
+    int changeUserState(Long id, int i);
+
+    int changePassword(TbUser tbUser);
 }
