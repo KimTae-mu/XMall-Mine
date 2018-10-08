@@ -1,5 +1,6 @@
 package com.alva.manager.service;
 
+import com.alva.common.pojo.DataTablesResult;
 import com.alva.manager.pojo.TbRole;
 import com.alva.manager.pojo.TbUser;
 
@@ -49,4 +50,6 @@ public interface UserService {
     boolean getUserByEditPhone(Long id, String phone);
 
     boolean getUserByEditName(Long id, String username);
+
+    DataTablesResult getRoleList();
 }

@@ -363,4 +363,14 @@
         <foreach collection="ids" item="id" separator=",">#{id}</foreach>
         )
     </delete>
+    <select id="getPermsByRoleId" resultType="java.lang.String">
+    SELECT
+    p.name
+    FROM
+	tb_role r
+    JOIN tb_role_perm rp ON rp.role_id = r.id
+    JOIN tb_permission p ON rp.permission_id = p.id
+    WHERE
+    r.id = #{id}
+    </select>
 </mapper>

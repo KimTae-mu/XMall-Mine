@@ -1,6 +1,8 @@
 package com.alva.manager.service.impl;
 
 import com.alva.common.exception.XmallException;
+import com.alva.common.pojo.DataTablesResult;
+import com.alva.manager.dto.RoleDto;
 import com.alva.manager.mapper.TbRoleMapper;
 import com.alva.manager.mapper.TbRolePermMapper;
 import com.alva.manager.mapper.TbUserMapper;
@@ -279,6 +281,40 @@ public class UserServiceImpl implements UserService {
         if (userById.getUsername() == null || !userById.getUsername().equals(username)) {
             result = getUserByName(username);
         }
+        return result;
+    }
+
+    @Override
+    public DataTablesResult getRoleList() {
+        DataTablesResult result = new DataTablesResult();
+        List<RoleDto> list = new ArrayList<>();
+        TbRoleExample example = new TbRoleExample();
+        List<TbRole> tbRoleList = tbRoleMapper.selectByExample(example);
+
+        if (tbRoleList == null) {
+            throw new XmallException("获取角色列表失败");
+        }
+        for (TbRole tbRole : tbRoleList) {
+            RoleDto roleDto = new RoleDto();
+            roleDto.setId(tbRole.getId());
+            roleDto.setName(tbRole.getName());
+            roleDto.setDescription(tbRole.getDescription());
+
+            List<String> permissions = tbUserMapper.getPermsByRoleId(tbRole.getId());
+            String names = "";
+            if (permissions.size() > 1) {
+                names += permissions.get(0);
+                for (int i = 1; i < permissions.size(); i++) {
+                    names += "|" + permissions.get(i);
+                }
+            } else if (permissions.size() == 1) {
+                names += permissions.get(0);
+            }
+            roleDto.setPermissions(names);
+
+            list.add(roleDto);
+        }
+        result.setData(list);
         return result;
     }
 

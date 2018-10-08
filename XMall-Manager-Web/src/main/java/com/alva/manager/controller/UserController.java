@@ -1,6 +1,7 @@
 package com.alva.manager.controller;
 
 import com.alva.common.annotation.SystemControllerLog;
+import com.alva.common.pojo.DataTablesResult;
 import com.alva.common.pojo.Result;
 import com.alva.common.utils.GeetestLib;
 import com.alva.common.utils.ResultUtil;
@@ -38,6 +39,29 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @RequestMapping(value = "/geetestInit",method = RequestMethod.GET)
+    @ApiOperation(value = "极验初始化")
+    public String geetesrInit(HttpServletRequest request){
+
+        GeetestLib gtSdk = new GeetestLib(GeetestLib.id, GeetestLib.key, GeetestLib.newfailback);
+
+        String resStr = "{}";
+
+        //自定义参数,可选择添加
+        HashMap<String, String> param = new HashMap<String, String>();
+
+        //进行验证预处理
+        int gtServerStatus = gtSdk.preProcess(param);
+
+        //将服务器状态设置到session中
+        request.getSession().setAttribute(gtSdk.gtServerStatusSessionKey, gtServerStatus);
+
+        resStr = gtSdk.getResponseStr();
+
+        return resStr;
+    }
+
 
     @RequestMapping(value = "/user/login", method = RequestMethod.POST)
     @ApiOperation(value = "用户登录")
@@ -93,6 +117,8 @@ public class UserController {
         return new ResultUtil<Object>().setData(null);
     }
 
+
+
     @RequestMapping(value = "/user/getAllRoles", method = RequestMethod.GET)
     @ApiOperation(value = "获取所有角色")
     public Result<List<TbRole>> getAllRoles() {
@@ -107,6 +133,12 @@ public class UserController {
         return new ResultUtil<Object>().setData(null);
     }
 
+    @RequestMapping(value = "/user/roleList",method = RequestMethod.GET)
+    @ApiOperation(value = "获取角色列表")
+    public DataTablesResult getRoleList(){
+        DataTablesResult result = userService.getRoleList();
+        return result;
+    }
 
     @RequestMapping(value = "/user/userInfo", method = RequestMethod.GET)
     @ApiOperation(value = "获取登录用户信息")
