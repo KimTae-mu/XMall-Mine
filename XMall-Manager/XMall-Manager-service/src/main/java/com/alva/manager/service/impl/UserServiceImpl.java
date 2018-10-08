@@ -3,23 +3,19 @@ package com.alva.manager.service.impl;
 import com.alva.common.exception.XmallException;
 import com.alva.common.pojo.DataTablesResult;
 import com.alva.manager.dto.RoleDto;
+import com.alva.manager.mapper.TbPermissionMapper;
 import com.alva.manager.mapper.TbRoleMapper;
 import com.alva.manager.mapper.TbRolePermMapper;
 import com.alva.manager.mapper.TbUserMapper;
 import com.alva.manager.pojo.*;
 import com.alva.manager.service.UserService;
-import org.apache.activemq.openwire.v1.XATransactionIdMarshaller;
-import org.apache.ibatis.builder.xml.XMLMapperBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * <一句话描述>,
@@ -41,6 +37,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private TbRolePermMapper tbRolePermMapper;
+
+    @Autowired
+    private TbPermissionMapper tbPermissionMapper;
 
     @Override
     public Set<String> getRoles(String username) {
@@ -337,21 +336,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int updateRole(TbRole tbRole) {
-        if(!getRoleByEditName(tbRole.getId(),tbRole.getName())){
+        if (!getRoleByEditName(tbRole.getId(), tbRole.getName())) {
             throw new XmallException("该角色名已存在");
         }
-        if(tbRoleMapper.updateByPrimaryKey(tbRole)!=1){
+        if (tbRoleMapper.updateByPrimaryKey(tbRole) != 1) {
             throw new XmallException("更新角色失败");
         }
-        if(tbRole.getRoles()!= null){
+        if (tbRole.getRoles() != null) {
             //删除已有角色-权限
             TbRolePermExample example = new TbRolePermExample();
             TbRolePermExample.Criteria criteria = example.createCriteria();
             criteria.andRoleIdEqualTo(tbRole.getId());
             List<TbRolePerm> tbRolePerms = tbRolePermMapper.selectByExample(example);
-            if(tbRolePerms != null){
-                for (TbRolePerm tbRolePerm : tbRolePerms){
-                    if(tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId())!=1){
+            if (tbRolePerms != null) {
+                for (TbRolePerm tbRolePerm : tbRolePerms) {
+                    if (tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId()) != 1) {
                         throw new XmallException("删除角色权限失败");
                     }
                 }
@@ -362,24 +361,131 @@ public class UserServiceImpl implements UserService {
                 tbRolePerm.setRoleId(tbRole.getId());
                 tbRolePerm.setPermissionId(tbRole.getRoles()[i]);
 
-                if(tbRolePermMapper.insert(tbRolePerm)!=1){
+                if (tbRolePermMapper.insert(tbRolePerm) != 1) {
                     throw new XmallException("编辑角色-权限失败");
                 }
             }
-        }else {
+        } else {
             TbRolePermExample example = new TbRolePermExample();
             TbRolePermExample.Criteria criteria = example.createCriteria();
             criteria.andRoleIdEqualTo(tbRole.getId());
             List<TbRolePerm> tbRolePerms = tbRolePermMapper.selectByExample(example);
-            if(tbRolePerms != null){
-                for (TbRolePerm tbRolePerm : tbRolePerms){
-                    if(tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId())!=1){
+            if (tbRolePerms != null) {
+                for (TbRolePerm tbRolePerm : tbRolePerms) {
+                    if (tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId()) != 1) {
                         throw new XmallException("删除角色权限失败");
                     }
                 }
             }
         }
         return 1;
+    }
+
+    @Override
+    public int deleteRole(int id) {
+        List<String> list = tbRoleMapper.getUsedRoles(id);
+        if (list == null) {
+            throw new XmallException("查询用户角色失败");
+        }
+        if (list.size() > 0) {
+            return 0;
+        }
+        if (tbRoleMapper.deleteByPrimaryKey(id) != 1) {
+            throw new XmallException("删除角色失败");
+        }
+        TbRolePermExample example = new TbRolePermExample();
+        TbRolePermExample.Criteria criteria = example.createCriteria();
+        criteria.andRoleIdEqualTo(id);
+        List<TbRolePerm> tbRolePerms = tbRolePermMapper.selectByExample(example);
+        if (tbRolePerms == null) {
+            throw new XmallException("查询角色权限失败");
+        }
+        for (TbRolePerm tbRolePerm : tbRolePerms) {
+            if (tbRolePermMapper.deleteByPrimaryKey(tbRolePerm.getId()) != 1) {
+                throw new XmallException("删除角色权限失败");
+            }
+        }
+        return 1;
+    }
+
+    @Override
+    public Long countRole() {
+        TbRoleExample tbRoleExample = new TbRoleExample();
+        long count = tbRoleMapper.countByExample(tbRoleExample);
+        return count;
+    }
+
+    @Override
+    public DataTablesResult getPermissionList() {
+        DataTablesResult result = new DataTablesResult();
+        TbPermissionExample example = new TbPermissionExample();
+        List<TbPermission> tbPermissions = tbPermissionMapper.selectByExample(example);
+        if (tbPermissions == null) {
+            throw new XmallException("获取权限列表失败");
+        }
+        result.setSuccess(true);
+        result.setData(tbPermissions);
+        return result;
+    }
+
+    @Override
+    public int addPermission(TbPermission tbPermission) {
+        if (tbPermissionMapper.insert(tbPermission) != 1) {
+            throw new XmallException("添加权限失败");
+        }
+        return 1;
+    }
+
+    @Override
+    public int updatePermission(TbPermission tbPermission) {
+        if (tbPermissionMapper.updateByPrimaryKey(tbPermission) != 1) {
+            throw new XmallException("更新权限失败");
+        }
+        return 1;
+    }
+
+    @Override
+    public int deletePermission(int id) {
+        if (tbPermissionMapper.deleteByPrimaryKey(id) != 1) {
+            throw new XmallException("删除权限失败");
+        }
+        TbRolePermExample example = new TbRolePermExample();
+        TbRolePermExample.Criteria criteria = example.createCriteria();
+        criteria.andPermissionIdEqualTo(id);
+        tbRolePermMapper.deleteByExample(example);
+        return 1;
+    }
+
+    @Override
+    public Long countPermission() {
+        TbPermissionExample example = new TbPermissionExample();
+        Long result = tbPermissionMapper.countByExample(example);
+        if (result == null) {
+            throw new XmallException("统计权限数目失败");
+        }
+        return result;
+    }
+
+    @Override
+    public DataTablesResult getUserList() {
+        DataTablesResult result = new DataTablesResult();
+        TbUserExample example = new TbUserExample();
+
+        List<TbUser> users = tbUserMapper.selectByExample(example);
+        if (users == null) {
+            throw new XmallException("获取用户列表失败");
+        }
+        for (TbUser tbUser : users) {
+            String names = "";
+            Iterator<String> iterator = getRoles(tbUser.getUsername()).iterator();
+            while (iterator.hasNext()) {
+                names += iterator.next() + " ";
+            }
+            tbUser.setPassword("");
+            tbUser.setRoleNames(names);
+        }
+        result.setData(users);
+        return result;
     }
 
     private TbUser getUserById(Long id) {

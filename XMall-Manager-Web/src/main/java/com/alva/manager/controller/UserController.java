@@ -5,6 +5,7 @@ import com.alva.common.pojo.DataTablesResult;
 import com.alva.common.pojo.Result;
 import com.alva.common.utils.GeetestLib;
 import com.alva.common.utils.ResultUtil;
+import com.alva.manager.pojo.TbPermission;
 import com.alva.manager.pojo.TbRole;
 import com.alva.manager.pojo.TbUser;
 import com.alva.manager.service.UserService;
@@ -17,10 +18,12 @@ import org.quartz.ObjectAlreadyExistsException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.xml.crypto.Data;
 import java.util.HashMap;
 import java.util.List;
 
@@ -134,10 +137,10 @@ public class UserController {
         return true;
     }
 
-    @RequestMapping(value = "/user/edit/roleName/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/edit/roleName/{id}", method = RequestMethod.GET)
     @ApiOperation(value = "判断编辑角色是否已存在")
-    public boolean roleName(int id,String name){
-        return userService.getRoleByEditName(id,name);
+    public boolean roleName(int id, String name) {
+        return userService.getRoleByEditName(id, name);
     }
 
     @RequestMapping(value = "/user/addUser", method = RequestMethod.POST)
@@ -177,11 +180,74 @@ public class UserController {
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/user/updateRole",method = RequestMethod.POST)
+    @RequestMapping(value = "/user/updateRole", method = RequestMethod.POST)
     @ApiOperation(value = "更新角色")
-    public Result<Object> updateRole(@ModelAttribute TbRole tbRole){
+    public Result<Object> updateRole(@ModelAttribute TbRole tbRole) {
         userService.updateRole(tbRole);
         return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/usere/delRole/{ids}", method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除角色")
+    public Result<Object> delRole(@PathVariable int[] ids) {
+        for (int id : ids) {
+            int result = userService.deleteRole(id);
+            if (result == 0) {
+                return new ResultUtil<Object>().setErrorMsg("id为 " + id + "的角色被使用中,不能删除! ");
+            }
+        }
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/roleCount", method = RequestMethod.GET)
+    @ApiOperation(value = "统计角色数")
+    public Result<Object> getRoleCount() {
+        Long result = userService.countRole();
+        return new ResultUtil<Object>().setData(result);
+    }
+
+    @RequestMapping(value = "/user/permissionList", method = RequestMethod.GET)
+    @ApiOperation(value = "获取权限列表")
+    public DataTablesResult getPermissionList() {
+        DataTablesResult result = userService.getPermissionList();
+        return result;
+    }
+
+    @RequestMapping(value = "/user/addPermission", method = RequestMethod.POST)
+    @ApiOperation(value = "添加权限")
+    public Result<Object> addPermission(@ModelAttribute TbPermission tbPermission) {
+        userService.addPermission(tbPermission);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/updatePermission", method = RequestMethod.POST)
+    @ApiOperation(value = "更新权限")
+    public Result<Object> updatePermission(@ModelAttribute TbPermission tbPermission) {
+        userService.updatePermission(tbPermission);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/delPermission/{ids}", method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除权限")
+    public Result<Object> deletePermissionById(@PathVariable int[] ids) {
+        for (int id : ids) {
+            userService.deletePermission(id);
+        }
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/user/permissionCount", method = RequestMethod.GET)
+    @ApiOperation(value = "统计权限数")
+    public Result<Object> getPermissionCount() {
+        Long result = userService.countPermission();
+        return new ResultUtil<Object>().setData(result);
+    }
+
+    @RequestMapping(value = "/user/userList", method = RequestMethod.GET)
+    @ApiOperation(value = "获取用户列表")
+    public DataTablesResult getUserList() {
+        DataTablesResult result = userService.getUserList();
+        return result;
     }
 
     @RequestMapping(value = "/user/username", method = RequestMethod.GET)
@@ -223,14 +289,14 @@ public class UserController {
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/user/startUser/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/user/start/{id}", method = RequestMethod.PUT)
     @ApiOperation(value = "启用用户")
     public Result<Object> startUser(@PathVariable Long id) {
         userService.changeUserState(id, 1);
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/user/stopUser/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/user/stop/{id}", method = RequestMethod.PUT)
     @ApiOperation(value = "停用用户")
     public Result<Object> stopUser(Long id) {
         userService.changeUserState(id, 0);

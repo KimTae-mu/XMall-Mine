@@ -29,6 +29,16 @@ public class TbUser {
 
     private Date updated;
 
+    private String roleNames;
+
+    public String getRoleNames() {
+        return roleNames;
+    }
+
+    public void setRoleNames(String roleNames) {
+        this.roleNames = roleNames;
+    }
+
     public Long getId() {
         return id;
     }

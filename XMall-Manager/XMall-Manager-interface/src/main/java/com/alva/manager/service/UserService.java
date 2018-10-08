@@ -1,6 +1,7 @@
 package com.alva.manager.service;
 
 import com.alva.common.pojo.DataTablesResult;
+import com.alva.manager.pojo.TbPermission;
 import com.alva.manager.pojo.TbRole;
 import com.alva.manager.pojo.TbUser;
 
@@ -56,4 +57,20 @@ public interface UserService {
     boolean getRoleByEditName(int id, String name);
 
     int updateRole(TbRole tbRole);
+
+    int deleteRole(int id);
+
+    Long countRole();
+
+    DataTablesResult getPermissionList();
+
+    int addPermission(TbPermission tbPermission);
+
+    int updatePermission(TbPermission tbPermission);
+
+    int deletePermission(int id);
+
+    Long countPermission();
+
+    DataTablesResult getUserList();
 }
