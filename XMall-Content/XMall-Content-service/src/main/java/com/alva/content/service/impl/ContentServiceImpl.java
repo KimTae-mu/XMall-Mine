@@ -131,6 +131,20 @@ public class ContentServiceImpl implements ContentService {
         return 1;
     }
 
+    @Override
+    public int deletePanelContent(int id) {
+        if (tbPanelContentMapper.deleteByPrimaryKey(id) != 1) {
+            throw new XmallException("删除板块失败");
+        }
+        //同步导航栏缓存
+        if (id == HEADER_PANEL_ID) {
+            updateNavListRedis();
+        }
+        //同步缓存
+        deleteHomeRedis();
+        return 1;
+    }
+
     private TbPanelContent getTbPanelContentById(Integer id) {
         TbPanelContent tbPanelContent = tbPanelContentMapper.selectByPrimaryKey(id);
         if (tbPanelContent == null) {

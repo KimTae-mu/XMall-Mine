@@ -31,4 +31,11 @@ public interface ContentService {
      * @return
      */
     int updateContent(TbPanelContent tbPanelContent);
+
+    /**
+     * 删除板块
+     * @param id
+     * @return
+     */
+    int deletePanelContent(int id);
 }
