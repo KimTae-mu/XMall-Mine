@@ -1,6 +1,7 @@
 package com.alva.content.service.impl;
 
 import com.alva.common.exception.XmallException;
+import com.alva.common.jedis.JedisClient;
 import com.alva.common.pojo.DataTablesResult;
 import com.alva.content.service.ContentService;
 import com.alva.manager.mapper.TbItemMapper;
@@ -29,6 +30,9 @@ public class ContentServiceImpl implements ContentService {
 
     @Autowired
     private TbItemMapper tbItemMapper;
+
+    @Autowired
+    private JedisClient jedisClient;
 
     @Value("${PRODUCT_HOME}")
     private String PRODUCT_HOME;
@@ -94,6 +98,24 @@ public class ContentServiceImpl implements ContentService {
         }
         //同步缓存
         deleteHomeRedis();
+        return 1;
+    }
+
+    private int deleteHomeRedis() {
+        try {
+            jedisClient.del(PRODUCT_HOME);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 1;
+    }
+
+    private int updateNavListRedis() {
+        try {
+            jedisClient.del(HEADER_PANEL);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return 1;
     }
 }
