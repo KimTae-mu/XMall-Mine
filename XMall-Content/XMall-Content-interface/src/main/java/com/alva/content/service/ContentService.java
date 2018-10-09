@@ -1,6 +1,7 @@
 package com.alva.content.service;
 
 import com.alva.common.pojo.DataTablesResult;
+import com.alva.manager.pojo.TbPanelContent;
 
 /**
  * <一句话描述>,
@@ -17,4 +18,10 @@ public interface ContentService {
      * @return
      */
     DataTablesResult getPanelContentListByPanelId(int panelId);
+
+    /**
+     * 添加板块内容
+     * @param tbPanelContent
+     */
+    int addPanelContent(TbPanelContent tbPanelContent);
 }
