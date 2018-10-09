@@ -24,4 +24,11 @@ public interface ContentService {
      * @param tbPanelContent
      */
     int addPanelContent(TbPanelContent tbPanelContent);
+
+    /**
+     * 编辑板块内容
+     * @param tbPanelContent
+     * @return
+     */
+    int updateContent(TbPanelContent tbPanelContent);
 }

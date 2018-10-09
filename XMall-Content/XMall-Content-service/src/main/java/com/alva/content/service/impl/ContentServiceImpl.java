@@ -9,6 +9,7 @@ import com.alva.manager.mapper.TbPanelContentMapper;
 import com.alva.manager.pojo.TbItem;
 import com.alva.manager.pojo.TbPanelContent;
 import com.alva.manager.pojo.TbPanelContentExample;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -99,6 +100,43 @@ public class ContentServiceImpl implements ContentService {
         //同步缓存
         deleteHomeRedis();
         return 1;
+    }
+
+    @Override
+    public int updateContent(TbPanelContent tbPanelContent) {
+
+        TbPanelContent old = getTbPanelContentById(tbPanelContent.getId());
+        if (StringUtils.isBlank(tbPanelContent.getPicUrl())) {
+            tbPanelContent.setPicUrl(old.getPicUrl());
+        }
+        if (StringUtils.isBlank(tbPanelContent.getPicUrl2())) {
+            tbPanelContent.setPicUrl2(old.getPicUrl2());
+        }
+        if (StringUtils.isBlank(tbPanelContent.getPicUrl3())) {
+            tbPanelContent.setPicUrl3(old.getPicUrl3());
+        }
+        tbPanelContent.setCreated(old.getCreated());
+        tbPanelContent.setUpdated(new Date());
+
+        if (tbPanelContentMapper.updateByPrimaryKey(tbPanelContent) != 1) {
+            throw new XmallException("更新板块内容信息失败");
+        }
+
+        //同步导航栏缓存
+        if (tbPanelContent.getPanelId() == HEADER_PANEL_ID) {
+            updateNavListRedis();
+        }
+        //同步缓存
+        deleteHomeRedis();
+        return 1;
+    }
+
+    private TbPanelContent getTbPanelContentById(Integer id) {
+        TbPanelContent tbPanelContent = tbPanelContentMapper.selectByPrimaryKey(id);
+        if (tbPanelContent == null) {
+            throw new XmallException("通过ID获取板块内容失败");
+        }
+        return tbPanelContent;
     }
 
     private int deleteHomeRedis() {

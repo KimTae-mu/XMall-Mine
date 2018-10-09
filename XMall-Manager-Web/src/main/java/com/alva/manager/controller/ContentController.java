@@ -45,4 +45,20 @@ public class ContentController {
         contentService.addPanelContent(tbPanelContent);
         return new ResultUtil<Object>().setData(null);
     }
+
+    @RequestMapping(value = "/content/update", method = RequestMethod.POST)
+    @ApiOperation(value = "编辑板块内容")
+    public Result<Object> updateContent(@ModelAttribute TbPanelContent tbPanelContent) {
+        contentService.updateContent(tbPanelContent);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/content/del/{ids}", method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除板块内容")
+    public Result<Object> delContent(@PathVariable int[] ids) {
+        for (int id : ids) {
+            contentService.deletePanelContent(id);
+        }
+        return new ResultUtil<Object>().setData(null);
+    }
 }
