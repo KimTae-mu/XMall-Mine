@@ -10,6 +10,8 @@ import com.alva.manager.pojo.TbItem;
 import com.alva.manager.pojo.TbPanelContent;
 import com.alva.manager.pojo.TbPanelContentExample;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -25,6 +27,8 @@ import java.util.List;
  * @since 设计wiki | 需求wiki
  */
 public class ContentServiceImpl implements ContentService {
+
+    private static final Logger log = LoggerFactory.getLogger(ContentServiceImpl.class);
 
     @Autowired
     private TbPanelContentMapper tbPanelContentMapper;
@@ -141,6 +145,23 @@ public class ContentServiceImpl implements ContentService {
             updateNavListRedis();
         }
         //同步缓存
+        deleteHomeRedis();
+        return 1;
+    }
+
+    @Override
+    public String getIndexRedis() {
+        try {
+            String json = jedisClient.get(PRODUCT_HOME);
+            return json;
+        } catch (Exception e) {
+            log.error(e.toString());
+        }
+        return "";
+    }
+
+    @Override
+    public int updateIndexRedis() {
         deleteHomeRedis();
         return 1;
     }

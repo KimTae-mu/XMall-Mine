@@ -38,4 +38,15 @@ public interface ContentService {
      * @return
      */
     int deletePanelContent(int id);
+
+    /**
+     * 获取首页缓存
+     * @return
+     */
+    String getIndexRedis();
+
+    /**
+     * 同步首页缓存
+     */
+    int updateIndexRedis();
 }

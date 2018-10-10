@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @since 设计wiki | 需求wiki
  */
 @Controller
-@Api(value = "板块内容管理")
+@Api(description = "板块内容管理")
 public class ContentController {
 
     static final Logger log = LoggerFactory.getLogger(ContentController.class);
