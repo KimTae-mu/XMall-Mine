@@ -15,6 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
+import java.io.IOException;
 
 /**
  * <一句话描述>,
@@ -59,6 +60,40 @@ public class ImageController {
     @RequestMapping(value = "/kindeditor/imageUpload", method = RequestMethod.POST)
     @ApiOperation(value = "KindEditor图片上传")
     public KindEditorResult kindeditor(@RequestParam("imageFile") MultipartFile files, HttpServletRequest request) {
-
+        KindEditorResult kindEditorResult = new KindEditorResult();
+        //文件保存路径
+        String filepath = request.getSession().getServletContext().getRealPath("/upload") + "\\"
+                + QiniuUtil.renamePic(files.getOriginalFilename());
+        //检查文件
+        String message = QiniuUtil.isValidImage(request, files);
+        if (!message.equals("valid")) {
+            kindEditorResult.setError(1);
+            kindEditorResult.setMessage(message);
+            return kindEditorResult;
+        }
+        try {
+            //保存至云服务器
+            File file = new File(filepath);
+            files.transferTo(file);
+            //上传七牛云服务器
+            String imagePath = QiniuUtil.qiniuUpload(filepath);
+            if (imagePath.contains("error")) {
+                kindEditorResult.setError(1);
+                kindEditorResult.setMessage(message);
+                return kindEditorResult;
+            }
+            //路径为文件且不为空则进行删除
+            if (file.isFile() && file.exists()) {
+                file.delete();
+            }
+            kindEditorResult.setError(0);
+            kindEditorResult.setMessage(imagePath);
+            return kindEditorResult;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        kindEditorResult.setError(1);
+        kindEditorResult.setMessage("上传失败");
+        return kindEditorResult;
     }
 }
