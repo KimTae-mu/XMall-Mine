@@ -49,4 +49,28 @@ public interface ContentService {
      * 同步首页缓存
      */
     int updateIndexRedis();
+
+    /**
+     * 获取推荐板块缓存
+     * @return
+     */
+    String getRecommendRedis();
+
+    /**
+     * 刷新推荐板块缓存
+     * @return
+     */
+    int updateRecommendRedis();
+
+    /**
+     * 获取捐赠板块缓存
+     * @return
+     */
+    String getThankRedis();
+
+    /**
+     * 刷新捐赠板块缓存
+     * @return
+     */
+    int updateThankRedis();
 }

@@ -166,6 +166,48 @@ public class ContentServiceImpl implements ContentService {
         return 1;
     }
 
+    @Override
+    public String getRecommendRedis() {
+        try {
+            String json = jedisClient.get(RECOMEED_PANEL);
+            return json;
+        } catch (Exception e) {
+            log.error(e.toString());
+        }
+        return "";
+    }
+
+    @Override
+    public int updateRecommendRedis() {
+        try {
+            jedisClient.del(RECOMEED_PANEL);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 1;
+    }
+
+    @Override
+    public String getThankRedis() {
+        try {
+            String json = jedisClient.get(THANK_PANEL);
+            return json;
+        } catch (Exception e) {
+            log.error(e.toString());
+        }
+        return "";
+    }
+
+    @Override
+    public int updateThankRedis() {
+        try {
+            jedisClient.del(THANK_PANEL);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 1;
+    }
+
     private TbPanelContent getTbPanelContentById(Integer id) {
         TbPanelContent tbPanelContent = tbPanelContentMapper.selectByPrimaryKey(id);
         if (tbPanelContent == null) {
