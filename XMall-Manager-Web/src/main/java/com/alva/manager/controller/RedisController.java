@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <一句话描述>,
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author 穆国超
  * @since 设计wiki | 需求wiki
  */
-@Controller
+@RestController
 @Api(description = "缓存管理")
 public class RedisController {
 
