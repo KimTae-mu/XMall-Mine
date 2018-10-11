@@ -7,6 +7,7 @@ import com.alva.manager.pojo.TbItemCat;
 import com.alva.manager.pojo.TbItemCatExample;
 import com.alva.manager.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.List;
  * @author 穆国超
  * @since 设计wiki | 需求wiki
  */
+@Service
 public class ItemCatServiceImpl implements ItemCatService {
 
     @Autowired
