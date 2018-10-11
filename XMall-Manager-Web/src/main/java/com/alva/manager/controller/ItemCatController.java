@@ -1,15 +1,16 @@
 package com.alva.manager.controller;
 
+import com.alva.common.pojo.Result;
 import com.alva.common.pojo.ZTreeNode;
+import com.alva.common.utils.ResultUtil;
+import com.alva.manager.pojo.TbItemCat;
 import com.alva.manager.service.ItemCatService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.omg.CORBA.OBJECT_NOT_EXIST;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,5 +33,26 @@ public class ItemCatController {
     public List<ZTreeNode> getItemCatList(@RequestParam(name = "id", defaultValue = "0") int parentId) {
         List<ZTreeNode> itemCatList = itemCatService.getItemCatList(parentId);
         return itemCatList;
+    }
+
+    @RequestMapping(value = "/item/cat/add", method = RequestMethod.POST)
+    @ApiOperation(value = "添加商品分类")
+    public Result<Object> addItemCategory(@ModelAttribute TbItemCat tbItemCat) {
+        itemCatService.addItemCat(tbItemCat);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/item/cat/update", method = RequestMethod.POST)
+    @ApiOperation(value = "编辑商品分类")
+    public Result<Object> updateItemCategory(@ModelAttribute TbItemCat tbItemCat) {
+        itemCatService.updateItemCat(tbItemCat);
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/item/cat/del/{id}", method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除商品分类")
+    public Result<Object> deleteItemCategory(@PathVariable Long id) {
+        itemCatService.deleteItemCat(id);
+        return new ResultUtil<Object>().setData(null);
     }
 }
