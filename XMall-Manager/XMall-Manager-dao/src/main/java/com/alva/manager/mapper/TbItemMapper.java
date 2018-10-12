@@ -28,4 +28,7 @@ public interface TbItemMapper {
     int updateByPrimaryKeySelective(TbItem record);
 
     int updateByPrimaryKey(TbItem record);
+
+    List<TbItem> selectItemByCondition(@Param("cid") int cid, @Param("search") String search,
+                                       @Param("orderCol") String orderCol, @Param("orderDir") String orderDir);
 }
