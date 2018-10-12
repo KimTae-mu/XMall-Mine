@@ -21,10 +21,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import javax.jms.Destination;
+import javax.jms.*;
 import java.util.Date;
 import java.util.List;
 
@@ -182,37 +183,37 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public TbItem updateItem(Long id, ItemDto itemDto) {
-        TbItem oldTbItem=getNormalItemById(id);
+        TbItem oldTbItem = getNormalItemById(id);
 
-        TbItem tbItem= DtoUtil.ItemDto2TbItem(itemDto);
+        TbItem tbItem = DtoUtil.ItemDto2TbItem(itemDto);
 
-        if(tbItem.getImage().isEmpty()){
+        if (tbItem.getImage().isEmpty()) {
             tbItem.setImage(oldTbItem.getImage());
         }
         tbItem.setId(id);
         tbItem.setStatus(oldTbItem.getStatus());
         tbItem.setCreated(oldTbItem.getCreated());
         tbItem.setUpdated(new Date());
-        if(tbItemMapper.updateByPrimaryKey(tbItem)!=1){
+        if (tbItemMapper.updateByPrimaryKey(tbItem) != 1) {
             throw new XmallException("更新商品失败");
         }
 
-        TbItemDesc tbItemDesc=new TbItemDesc();
+        TbItemDesc tbItemDesc = new TbItemDesc();
 
         tbItemDesc.setItemId(id);
         tbItemDesc.setItemDesc(itemDto.getDetail());
         tbItemDesc.setUpdated(new Date());
         tbItemDesc.setCreated(oldTbItem.getCreated());
 
-        if(tbItemDescMapper.updateByPrimaryKey(tbItemDesc)!=1){
+        if (tbItemDescMapper.updateByPrimaryKey(tbItemDesc) != 1) {
             throw new XmallException("更新商品详情失败");
         }
         //同步缓存
         deleteProductDetRedis(id);
         //发送消息同步索引库
         try {
-            sendRefreshESMessage("add",id);
-        }catch (Exception e){
+            sendRefreshESMessage("add", id);
+        } catch (Exception e) {
             log.error("同步索引出错");
         }
         return getNormalItemById(id);
@@ -220,9 +221,30 @@ public class ItemServiceImpl implements ItemService {
 
     /**
      * 同步商品详情缓存
+     *
      * @param id
      */
-    public void deleteProductDetRedis(Long id){
+    public void deleteProductDetRedis(Long id) {
+        try {
+            jedisClient.del(PRODUCT_ITEM + ":" + id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
+    /**
+     * 发送消息同步索引库
+     *
+     * @param type
+     * @param id
+     */
+    public void sendRefreshESMessage(String type, Long id) {
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(type + "," + String.valueOf(id));
+                return textMessage;
+            }
+        });
     }
 }
