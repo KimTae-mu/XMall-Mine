@@ -122,7 +122,7 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public TbItem alertItemState(Long id, Integer state) {
         TbItem tbMember = getNormalItemById(id);
-        tbMember.setStatus(state.byteValue());
+        tbMember.setStatus(state.intValue());
         tbMember.setUpdated(new Date());
 
         if (tbItemMapper.updateByPrimaryKey(tbMember) != 1) {
@@ -153,7 +153,7 @@ public class ItemServiceImpl implements ItemService {
         long id = IDUtil.getRandomId();
         TbItem tbItem = DtoUtil.ItemDto2TbItem(itemDto);
         tbItem.setId(id);
-        tbItem.setStatus((byte) 1);
+        tbItem.setStatus(1);
         tbItem.setCreated(new Date());
         tbItem.setUpdated(new Date());
         if (tbItem.getImage().isEmpty()) {
