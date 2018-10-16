@@ -35,9 +35,9 @@ public interface ExpressService {
 
     /**
      * 删除快递
-     * @param tbExpress
+     * @param id
      * @return
      */
-    int delExpress(TbExpress tbExpress);
+    int delExpress(int id);
 
 }
