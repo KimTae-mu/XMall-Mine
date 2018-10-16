@@ -26,38 +26,38 @@ public class ExpressController {
     @Autowired
     private ExpressService expressService;
 
-    @RequestMapping(value = "/express/list",method = RequestMethod.GET)
+    @RequestMapping(value = "/express/list", method = RequestMethod.GET)
     @ApiOperation(value = "获得所有快递")
-    public DataTablesResult addressList(){
+    public DataTablesResult addressList() {
 
         DataTablesResult result = new DataTablesResult();
-        List<TbExpress> list=expressService.getExpressList();
+        List<TbExpress> list = expressService.getExpressList();
         result.setData(list);
         result.setSuccess(true);
         return result;
     }
 
-    @RequestMapping(value = "/express/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/express/add", method = RequestMethod.POST)
     @ApiOperation(value = "添加快递")
-    public Result<Object> addTbExpress(@ModelAttribute TbExpress tbExpress){
+    public Result<Object> addTbExpress(@ModelAttribute TbExpress tbExpress) {
 
         expressService.addExpress(tbExpress);
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/express/update",method = RequestMethod.POST)
+    @RequestMapping(value = "/express/update", method = RequestMethod.POST)
     @ApiOperation(value = "编辑快递")
-    public Result<Object> updateAddress(@ModelAttribute TbExpress tbExpress){
+    public Result<Object> updateAddress(@ModelAttribute TbExpress tbExpress) {
 
         expressService.updateExpress(tbExpress);
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/express/del/{ids}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/express/del/{ids}", method = RequestMethod.DELETE)
     @ApiOperation(value = "删除快递")
-    public Result<Object> delAddress(@PathVariable int[] ids){
+    public Result<Object> delAddress(@PathVariable int[] ids) {
 
-        for(int id:ids){
+        for (int id : ids) {
             expressService.delExpress(id);
         }
         return new ResultUtil<Object>().setData(null);
