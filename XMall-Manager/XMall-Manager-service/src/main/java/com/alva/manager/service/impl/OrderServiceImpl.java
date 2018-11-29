@@ -335,11 +335,70 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public int payDelNotNotify(String tokenName, String token, String id) {
-        return 0;
+
+        if (StringUtils.isBlank(tokenName) || StringUtils.isBlank(token) || StringUtils.isBlank(id)) {
+            return -1;
+        }
+
+        String value = jedisClient.get(tokenName);
+        if (!value.equals(token)) {
+            return -1;
+        }
+        TbThanks tbThanks = tbThanksMapper.selectByPrimaryKey(Integer.valueOf(id));
+        if (tbThanks == null) {
+            return 0;
+        }
+        if (tbThanksMapper.deleteByPrimaryKey(Integer.valueOf(id)) != 1) {
+            return 0;
+        }
+
+        TbOrder tbOrder = tbOrderMapper.selectByPrimaryKey(tbThanks.getOrderId());
+        if (tbOrder != null) {
+            tbOrder.setStatus(PaymentConstant.ORDERFAILED);
+            tbOrder.setUpdateTime(new Date());
+            tbOrder.setCloseTime(new Date());
+
+            if (tbOrderMapper.updateByPrimaryKey(tbOrder) != 1) {
+                return 0;
+            }
+        }
+        return 1;
     }
 
     @Override
     public int payDel(String tokenName, String token, String id) {
-        return 0;
+
+        if(StringUtils.isBlank(tokenName)||StringUtils.isBlank(token)||StringUtils.isBlank(id)){
+            return -1;
+        }
+
+        String value = jedisClient.get(tokenName);
+        if(!value.equals(token)){
+            return -1;
+        }
+
+        TbThanks tbThanks = tbThanksMapper.selectByPrimaryKey(Integer.valueOf(id));
+        if(tbThanks==null){
+            return 0;
+        }
+        if(tbThanksMapper.deleteByPrimaryKey(Integer.valueOf(id))!=1){
+            return 0;
+        }
+
+        TbOrder tbOrder = tbOrderMapper.selectByPrimaryKey(tbThanks.getOrderId());
+        if(tbOrder!=null){
+            tbOrder.setStatus(PaymentConstant.ORDERFAILED);
+            tbOrder.setUpdateTime(new Date());
+            tbOrder.setCloseTime(new Date());
+            if(tbOrderMapper.updateByPrimaryKey(tbOrder)!=1){
+                return 0;
+            }
+        }
+
+        if(StringUtils.isNotBlank(tbThanks.getEmail())&&EmailUtil.checkEmail(tbThanks.getEmail())){
+            String content="抱歉，由于您支付不起或其他原因，您的订单支付失败，请尝试重新支付！";
+            emailUtil.sendEmailPayResult(tbThanks.getEmail(),"[XMALL]支付失败通知",content);
+        }
+        return 1;
     }
 }
