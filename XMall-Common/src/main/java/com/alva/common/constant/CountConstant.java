@@ -1,6 +1,5 @@
 package com.alva.common.constant;
 
-import org.omg.PortableInterceptor.INACTIVE;
 
 /**
  * <一句话描述>,

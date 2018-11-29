@@ -7,34 +7,39 @@ package com.alva.common.constant;
  * @author 穆国超
  * @since 设计wiki | 需求wiki
  */
-public interface PaymentConstant {
+public class PaymentConstant {
     /**
      * 未付款
      */
-    Integer UNPAID = 0;
+    public static final Integer UNPAID = 0;
 
     /**
      * 已付款
      */
-    Integer PAID = 1;
+    public static final Integer PAID = 1;
 
     /**
      * 未发货
      */
-    Integer NOTSHIPPED = 2;
+    public static final Integer NOTSHIPPED = 2;
 
     /**
      * 已发货
      */
-    Integer SHIPPED = 3;
+    public static final Integer SHIPPED = 3;
 
     /**
      * 交易成功
      */
-    Integer ORDERSUCCESS = 4;
+    public static final Integer ORDERSUCCESS = 4;
 
     /**
      * 交易关闭
      */
-    Integer ORDERCLOSED = 5;
+    public static final Integer ORDERCLOSED = 5;
+
+    /**
+     * 交易失败
+     */
+    public static final Integer ORDERFAILED = 6;
 }

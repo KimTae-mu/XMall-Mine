@@ -24,6 +24,10 @@ public class TbThanks {
 
     private Date date;
 
+    private String time;
+
+    private String userId;
+
     public Integer getId() {
         return id;
     }
@@ -102,5 +106,21 @@ public class TbThanks {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }
