@@ -40,4 +40,18 @@ public class PayController {
         }
         return new ResultUtil<Object>().setData("处理成功");
     }
+
+    @RequestMapping(value = "/pay/back", method = RequestMethod.GET)
+    @ApiOperation(value = "支付审核驳回")
+    public Result<Object> backPay(String tokenName, String token, String id) {
+        int result = orderService.backPay(tokenName, token, id);
+
+        if (result == -1) {
+            return new ResultUtil<Object>().setErrorMsg("无效的Token或链接");
+        }
+        if (result == 0) {
+            return new ResultUtil<Object>().setErrorMsg("数据处理出错");
+        }
+        return new ResultUtil<Object>().setData("处理成功");
+    }
 }
