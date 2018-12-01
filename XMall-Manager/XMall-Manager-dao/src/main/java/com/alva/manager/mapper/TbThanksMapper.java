@@ -2,6 +2,7 @@ package com.alva.manager.mapper;
 
 import com.alva.manager.pojo.TbThanks;
 import com.alva.manager.pojo.TbThanksExample;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -28,4 +29,6 @@ public interface TbThanksMapper {
     int updateByPrimaryKeySelective(TbThanks record);
 
     int updateByPrimaryKey(TbThanks record);
+
+    int deleteThanks(@Param("ids") int[] ids);
 }

@@ -48,4 +48,12 @@ public interface ThanksService {
      * @return
      */
     int deleteThanks(int[] ids);
+
+    /**
+     * 通过id获取捐赠
+     *
+     * @param id
+     * @return
+     */
+    TbThanks getThank(int id);
 }
