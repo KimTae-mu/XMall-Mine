@@ -8,10 +8,7 @@ import com.alva.manager.service.ThanksService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <一句话描述>,
@@ -41,9 +38,29 @@ public class ThanksController {
         return new ResultUtil<Object>().setData(result);
     }
 
-    @RequestMapping(value = "/thanks/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/thanks/add", method = RequestMethod.POST)
     @ApiOperation(value = "添加捐赠")
-    public Result<Object> addThanks(@ModelAttribute TbThanks tbThanks){
+    public Result<Object> addThanks(@ModelAttribute TbThanks tbThanks) {
 
+        thanksService.addThanks(tbThanks);
+
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/thanks/update", method = RequestMethod.POST)
+    @ApiOperation(value = "编辑捐赠")
+    public Result<Object> updateThanks(@ModelAttribute TbThanks tbThanks) {
+
+        thanksService.updateThanks(tbThanks);
+
+        return new ResultUtil<Object>().setData(null);
+    }
+
+    @RequestMapping(value = "/thanks/del/{ids}", method = RequestMethod.DELETE)
+    @ApiOperation(value = "删除捐赠")
+    public Result<Object> deleteThanks(@PathVariable int[] ids) {
+        thanksService.deleteThanks(ids);
+
+        return new ResultUtil<Object>().setData(null);
     }
 }

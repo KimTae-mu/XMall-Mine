@@ -10,6 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -50,5 +53,43 @@ public class ThanksServiceImpl implements ThanksService {
             throw new XmallException("统计捐赠数目失败");
         }
         return reslut;
+    }
+
+    @Override
+    public int addThanks(TbThanks tbThanks) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = null;
+        try {
+            date = simpleDateFormat.parse(tbThanks.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        tbThanks.setDate(date);
+        if (tbThanksMapper.insert(tbThanks) != 1) {
+            throw new XmallException("添加捐赠失败");
+        }
+        return 1;
+    }
+
+    @Override
+    public int updateThanks(TbThanks tbThanks) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        Date date = null;
+        try {
+            date = simpleDateFormat.parse(tbThanks.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        tbThanks.setDate(date);
+        if (tbThanksMapper.updateByPrimaryKey(tbThanks) != 1) {
+            throw new XmallException("编辑捐赠失败");
+        }
+        return 1;
+    }
+
+    @Override
+    public int deleteThanks(int[] ids) {
+        return 0;
     }
 }

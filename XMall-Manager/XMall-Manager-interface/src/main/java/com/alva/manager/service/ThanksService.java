@@ -1,6 +1,7 @@
 package com.alva.manager.service;
 
 import com.alva.common.pojo.DataTablesResult;
+import com.alva.manager.pojo.TbThanks;
 
 /**
  * <一句话描述>,
@@ -24,4 +25,27 @@ public interface ThanksService {
      */
     Long countThanks();
 
+    /**
+     * 添加捐赠
+     *
+     * @param tbThanks
+     * @return
+     */
+    int addThanks(TbThanks tbThanks);
+
+    /**
+     * 编辑捐赠
+     *
+     * @param tbThanks
+     * @return
+     */
+    int updateThanks(TbThanks tbThanks);
+
+    /**
+     * 删除捐赠
+     *
+     * @param ids
+     * @return
+     */
+    int deleteThanks(int[] ids);
 }
