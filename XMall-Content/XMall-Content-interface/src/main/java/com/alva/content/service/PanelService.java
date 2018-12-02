@@ -1,6 +1,7 @@
 package com.alva.content.service;
 
 import com.alva.common.pojo.ZTreeNode;
+import com.alva.manager.pojo.TbPanel;
 
 import java.util.List;
 
@@ -20,4 +21,25 @@ public interface PanelService {
      * @return
      */
     List<ZTreeNode> getPanelList(int position, boolean showAll);
+
+    /**
+     * 添加板块
+     *
+     * @param tbPanel
+     */
+    int addPanel(TbPanel tbPanel);
+
+    /**
+     * 更新板块
+     *
+     * @param tbPanel
+     */
+    int updatePanel(TbPanel tbPanel);
+
+    /**
+     * 删除板块
+     *
+     * @param id
+     */
+    int deletePanel(int id);
 }
