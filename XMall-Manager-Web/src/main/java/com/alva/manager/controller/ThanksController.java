@@ -71,7 +71,7 @@ public class ThanksController {
     @RequestMapping(value = "/thanks/{id}", method = RequestMethod.GET)
     @ApiOperation(value = "通过id获得捐赠")
     public Result<Object> getThanks(@PathVariable int id) {
-        TbThanks tbThanks = thanksService.getThank(id);
+        TbThanks tbThanks = thanksService.getThankById(id);
         return new ResultUtil<Object>().setData(tbThanks);
     }
 }

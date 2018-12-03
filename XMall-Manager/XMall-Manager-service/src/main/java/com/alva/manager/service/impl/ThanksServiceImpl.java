@@ -12,8 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * <一句话描述>,
@@ -90,14 +92,22 @@ public class ThanksServiceImpl implements ThanksService {
 
     @Override
     public int deleteThanks(int[] ids) {
-        int result = tbThanksMapper.deleteThanks(ids);
+
+        TbThanksExample example = new TbThanksExample();
+        TbThanksExample.Criteria criteria = example.createCriteria();
+
+        criteria.andIdIn(Arrays.stream(ids).boxed().collect(Collectors.toList()));
+        if (tbThanksMapper.deleteByExample(example) != 1) {
+            throw new XmallException("删除捐赠失败");
+        }
+//        int result = tbThanksMapper.deleteThanks(ids);
         return 0;
     }
 
     @Override
-    public TbThanks getThank(int id) {
+    public TbThanks getThankById(int id) {
         TbThanks tbThanks = tbThanksMapper.selectByPrimaryKey(id);
-        if(tbThanks == null){
+        if (tbThanks == null) {
             throw new XmallException("获取捐赠数据失败");
         }
         return tbThanks;
