@@ -7,6 +7,8 @@ import com.alva.manager.pojo.TbThanks;
 import com.alva.manager.service.ThanksService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,6 +22,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Api(description = "捐赠管理")
 public class ThanksController {
+
+    private static final Logger log = LoggerFactory.getLogger(ThanksController.class);
 
     @Autowired
     ThanksService thanksService;
@@ -64,10 +68,10 @@ public class ThanksController {
         return new ResultUtil<Object>().setData(null);
     }
 
-    @RequestMapping(value = "/thanks/{id}",method = RequestMethod.GET)
-    @ApiOperation(value = "通过id获取捐赠")
-    public Result<TbThanks> getThanks(@PathVariable int id){
-        TbThanks tbThanks = thanksService.getThankById(id);
-        return new ResultUtil<TbThanks>().setData(tbThanks);
+    @RequestMapping(value = "/thanks/{id}", method = RequestMethod.GET)
+    @ApiOperation(value = "通过id获得捐赠")
+    public Result<Object> getThanks(@PathVariable int id) {
+        TbThanks tbThanks = thanksService.getThank(id);
+        return new ResultUtil<Object>().setData(tbThanks);
     }
 }

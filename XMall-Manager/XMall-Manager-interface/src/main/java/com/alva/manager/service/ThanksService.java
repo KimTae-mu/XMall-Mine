@@ -55,5 +55,5 @@ public interface ThanksService {
      * @param id
      * @return
      */
-    TbThanks getThankById(int id);
+    TbThanks getThank(int id);
 }
