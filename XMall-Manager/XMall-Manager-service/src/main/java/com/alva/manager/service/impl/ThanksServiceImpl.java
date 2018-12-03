@@ -92,4 +92,15 @@ public class ThanksServiceImpl implements ThanksService {
     public int deleteThanks(int[] ids) {
         return 0;
     }
+
+    @Override
+    public TbThanks getThankById(int id) {
+
+        TbThanks tbThanks = tbThanksMapper.selectByPrimaryKey(id);
+
+        if (tbThanks == null) {
+            throw new XmallException("获取捐赠数据失败");
+        }
+        return tbThanks;
+    }
 }
